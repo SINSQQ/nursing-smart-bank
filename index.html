@@ -10,7 +10,7 @@
     .bar{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center}
     h1{font-size:20px;margin:0}.sub{font-size:12px;color:#5e6b7a;margin-top:3px}
     select,input,button{font:inherit;border:1px solid #cbd5df;border-radius:6px;background:#fff;padding:9px 10px}
-    button{cursor:pointer;background:#1769e0;color:#fff;border-color:#1769e0}.ghost{background:#fff;color:#1d2735}
+    button{cursor:pointer;background:#1769e0;color:#fff;border-color:#1769e0}.ghost{background:#fff;color:#1d2735}button:disabled{opacity:.45;cursor:not-allowed}
     .wrap{max-width:1180px;margin:0 auto;padding:16px}.controls{display:grid;grid-template-columns:1fr 170px 170px 150px;gap:8px;margin-bottom:12px}
     .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tabs button{background:#fff;color:#1d2735}.tabs button.active{background:#1769e0;color:#fff}
     .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}.stat{background:#fff;border:1px solid #dde4ec;border-radius:8px;padding:12px}.stat b{display:block;font-size:22px}
@@ -19,7 +19,8 @@
     .q{font-weight:700;line-height:1.4}.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.opt{border:1px solid #dfe6ef;border-radius:6px;padding:9px;background:#fff;text-align:left;color:#18212f}
     .opt.correct{border-color:#159947;background:#eaf8ef}.opt.wrong{border-color:#cf2e2e;background:#fdecec}.answer{margin-top:10px;font-weight:700;color:#0b6b3d}.muted{color:#647184;font-size:13px}
     .sideList{max-height:70vh;overflow:auto}.sideItem{width:100%;display:block;text-align:left;margin:0 0 6px;background:#fff;color:#18212f;border-color:#d9e0e8}.sideItem.active{border-color:#1769e0}
-    .match{display:grid;grid-template-columns:1fr;gap:8px;margin-top:10px}.matchRow{border:1px solid #dfe6ef;border-radius:6px;padding:10px}.hidden{display:none}
+    .match{display:grid;grid-template-columns:1fr;gap:8px;margin-top:10px}.matchRow{border:1px solid #dfe6ef;border-radius:6px;padding:10px}.timer{font-weight:700;color:#9a3412;border-color:#fed7aa;background:#fff7ed}
+    .progress{height:8px;background:#e5eaf0;border-radius:999px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;background:#1769e0}.summaryActions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
     @media(max-width:850px){.bar,.controls,.stats,.grid,.opts{grid-template-columns:1fr}.top{position:static}}
   </style>
 </head>
@@ -57,10 +58,12 @@
   <script>
     const D=window.BANK_DATA, $=s=>document.querySelector(s);
     const chapter=$('#chapter'), section=$('#section'), filter=$('#filter'), search=$('#search'), main=$('#main'), side=$('#side');
-    let mode='browse', current=0, picked=null, checked=false;
+    let mode='browse', current=0, quizRows=[], quizAnswers={}, timerId=null, timeLeft=60, finished=false;
     for(const c of D.summary.chapters){const o=document.createElement('option');o.value=c.chapter;o.textContent=`Chapter ${c.chapter} - ${c.title}`;chapter.appendChild(o)}
+    function answer(q){return q.correct_answer||q.answer||q.answer_text||''}
+    function opts(q){return q.section==='true_false'?{A:'True',B:'False'}:(q.options||{})}
     function rows(){
-      const s=search.value.trim().toLowerCase();
+      const term=search.value.trim().toLowerCase();
       return D.questions.filter(q=>{
         if(chapter.value&&String(q.chapter)!==chapter.value)return false;
         if(section.value&&q.section!==section.value)return false;
@@ -68,41 +71,76 @@
         if(filter.value==='review'&&!(q.review_flags||[]).length)return false;
         if(mode==='quiz'&&!['mcq','true_false'].includes(q.section))return false;
         if(mode==='match'&&q.section!=='matching')return false;
-        return !s||JSON.stringify(q).toLowerCase().includes(s);
+        return !term||JSON.stringify(q).toLowerCase().includes(term);
       });
     }
-    function answer(q){return q.correct_answer||q.answer||q.answer_text||''}
-    function opts(q){return q.section==='true_false'?{A:'True',B:'False'}:(q.options||{})}
     function renderStats(rs){
       const mcq=D.questions.filter(q=>q.section==='mcq').length, matching=D.questions.filter(q=>q.section==='matching').length;
       $('#stats').innerHTML=`<div class=stat><b>${D.questions.length}</b>Total records</div><div class=stat><b>${mcq}</b>MCQ complete</div><div class=stat><b>${matching}</b>Matching</div><div class=stat><b>${rs.length}</b>Shown</div>`;
     }
-    function card(q,i){
-      const o=opts(q), a=answer(q);
-      const optHtml=Object.entries(o).map(([k,v])=>`<div class=opt><b>${k}.</b> ${v}</div>`).join('');
+    function card(q){
+      const optHtml=Object.entries(opts(q)).map(([k,v])=>`<div class=opt><b>${k}.</b> ${v}</div>`).join('');
       const flags=(q.review_flags||[]).map(f=>`<span class=tag>${f}</span>`).join('');
-      return `<article class=card><div class=meta><span class=tag>Ch ${q.chapter}</span><span class=tag>${q.section_name||q.section}</span><span class=tag>#${q.number}</span>${flags}</div><div class=q>${q.question||''}</div>${optHtml?`<div class=opts>${optHtml}</div>`:''}<div class=answer>Answer: ${a}</div>${q.explanation?`<div class=muted>${q.explanation}</div>`:''}</article>`;
+      return `<article class=card><div class=meta><span class=tag>Ch ${q.chapter}</span><span class=tag>${q.section_name||q.section}</span><span class=tag>#${q.number}</span>${flags}</div><div class=q>${q.question||''}</div>${optHtml?`<div class=opts>${optHtml}</div>`:''}<div class=answer>Answer: ${answer(q)}</div>${q.explanation?`<div class=muted>${q.explanation}</div>`:''}</article>`;
     }
     function renderBrowse(rs){main.innerHTML=rs.map(card).join('')||'<div class=card>No results</div>'}
+    function quizSource(){return quizRows.length?quizRows:rows()}
+    function ensureQuiz(rs){if(!quizRows.length||finished){quizRows=[...rs];quizAnswers={};current=0;finished=false}return quizRows}
+    function startTimer(){
+      clearInterval(timerId);
+      const q=quizSource()[current];
+      if(!q||quizAnswers[q.uid])return;
+      timeLeft=60;
+      timerId=setInterval(()=>{
+        timeLeft--;
+        const el=$('#timer'); if(el)el.textContent=`${timeLeft}s`;
+        if(timeLeft<=0){
+          clearInterval(timerId);
+          const active=quizSource()[current];
+          if(active&&!quizAnswers[active.uid]){
+            quizAnswers[active.uid]={picked:null,correct:false,timedOut:true};
+            render();
+            setTimeout(()=>next(),900);
+          }
+        }
+      },1000);
+    }
     function renderQuiz(rs){
-      if(!rs.length){main.innerHTML='<div class=card>No quiz questions</div>';return}
-      if(current>=rs.length)current=0; const q=rs[current], o=opts(q), a=answer(q);
-      const buttons=Object.entries(o).map(([k,v])=>{
-        let cls='opt'; if(checked&&k===a)cls+=' correct'; if(checked&&picked===k&&picked!==a)cls+=' wrong';
-        return `<button class="${cls}" onclick="pick('${k}')"><b>${k}.</b> ${v}</button>`;
+      const qrows=ensureQuiz(rs);
+      if(!qrows.length){main.innerHTML='<div class=card>No quiz questions</div>';return}
+      if(current>=qrows.length){finishQuiz();return}
+      const q=qrows[current], saved=quizAnswers[q.uid], a=answer(q);
+      const buttons=Object.entries(opts(q)).map(([k,v])=>{
+        let cls='opt'; if(saved&&k===a)cls+=' correct'; if(saved&&saved.picked===k&&saved.picked!==a)cls+=' wrong';
+        return `<button class="${cls}" ${saved?'disabled':''} onclick="pick('${k}')"><b>${k}.</b> ${v}</button>`;
       }).join('');
-      main.innerHTML=`<article class=card><div class=meta><span class=tag>Ch ${q.chapter}</span><span class=tag>${q.section_name}</span><span class=tag>${current+1}/${rs.length}</span></div><div class=q>${q.question}</div><div class=opts>${buttons}</div>${checked?`<div class=answer>Answer: ${a}</div>`:''}<div class=meta style="margin-top:12px"><button onclick="prev()">Previous</button><button onclick="check()">Check</button><button onclick="next()">Next</button></div></article>`;
+      const done=Object.keys(quizAnswers).length, correct=Object.values(quizAnswers).filter(x=>x.correct).length;
+      main.innerHTML=`<article class=card><div class=meta><span class=tag>Ch ${q.chapter}</span><span class=tag>${q.section_name}</span><span class=tag>${current+1}/${qrows.length}</span><span class="tag timer">Time: <span id=timer>${saved?'done':timeLeft+'s'}</span></span><span class=tag>Correct: ${correct}/${done}</span></div><div class=progress><span style="width:${(done/qrows.length)*100}%"></span></div><div class=q>${q.question}</div><div class=opts>${buttons}</div>${saved?`<div class=answer>${saved.timedOut?'Time ended. ':''}Answer: ${a}</div>`:''}<div class=meta style="margin-top:12px"><button onclick="prev()" ${current===0?'disabled':''}>Previous</button><button onclick="next()" ${!saved?'disabled':''}>Next</button><button class=ghost onclick="resetQuiz()">Restart</button></div></article>`;
+      if(!saved)startTimer();
+    }
+    function finishQuiz(){
+      clearInterval(timerId); finished=true;
+      const qrows=quizSource(), wrong=qrows.filter(q=>!quizAnswers[q.uid]||!quizAnswers[q.uid].correct), correct=qrows.length-wrong.length;
+      main.innerHTML=`<article class=card><div class=q>Quiz Finished</div><div class=stats style="margin-top:12px"><div class=stat><b>${qrows.length}</b>Total</div><div class=stat><b>${correct}</b>Correct</div><div class=stat><b>${wrong.length}</b>Wrong</div><div class=stat><b>${Math.round((correct/qrows.length)*100)||0}%</b>Score</div></div><div class=summaryActions><button onclick="retryAll()">Retry All</button><button onclick="retryWrong()" ${wrong.length?'':'disabled'}>Retry Wrong Only</button><button class=ghost onclick="setMode('browse')">Browse Bank</button></div></article>`;
+      side.innerHTML=wrong.map(q=>`<button class=sideItem onclick="showWrong('${q.uid}')">Wrong: Ch${q.chapter} #${q.number}</button>`).join('');
     }
     function renderMatch(rs){
       const groups={}; for(const q of rs){(groups[q.chapter_title]??=[]).push(q)}
       main.innerHTML=Object.entries(groups).map(([name,items])=>`<article class=card><div class=q>${name}</div><div class=match>${items.map(q=>`<div class=matchRow>${q.question}</div>`).join('')}</div></article>`).join('')||'<div class=card>No matching questions</div>';
     }
-    function renderSide(rs){$('#count').textContent=`${rs.length} records`;side.innerHTML=rs.slice(0,350).map((q,i)=>`<button class="sideItem ${i===current?'active':''}" onclick="jump(${i})">Ch${q.chapter} #${q.number} ${q.section_name||q.section}</button>`).join('')}
+    function renderSide(rs){const src=mode==='quiz'&&quizRows.length?quizRows:rs;$('#count').textContent=`${src.length} records`;side.innerHTML=src.slice(0,350).map((q,i)=>`<button class="sideItem ${i===current?'active':''}" onclick="jump(${i})">Ch${q.chapter} #${q.number} ${q.section_name||q.section}</button>`).join('')}
     function render(){const rs=rows();renderStats(rs);renderSide(rs);if(mode==='quiz')renderQuiz(rs);else if(mode==='match')renderMatch(rs);else renderBrowse(rs)}
-    function setMode(m){mode=m;current=0;picked=null;checked=false;for(const id of ['browseTab','quizTab','matchTab'])$('#'+id).classList.remove('active');$('#'+m+'Tab').classList.add('active');render()}
-    function pick(k){picked=k;checked=true;render()} function check(){checked=true;render()} function next(){current++;picked=null;checked=false;render()} function prev(){current=Math.max(0,current-1);picked=null;checked=false;render()} function jump(i){current=i;picked=null;checked=false;render()}
+    function setMode(m){clearInterval(timerId);mode=m;current=0;if(m==='quiz'){quizRows=[];quizAnswers={};finished=false}for(const id of ['browseTab','quizTab','matchTab'])$('#'+id).classList.remove('active');$('#'+m+'Tab').classList.add('active');render()}
+    function pick(k){const q=quizSource()[current], ok=k===answer(q);quizAnswers[q.uid]={picked:k,correct:ok,timedOut:false};clearInterval(timerId);render();if(ok)setTimeout(()=>next(),700)}
+    function next(){const q=quizSource()[current];if(mode==='quiz'&&q&&!quizAnswers[q.uid])return;current++;render()}
+    function prev(){current=Math.max(0,current-1);render()}
+    function jump(i){current=i;render()}
+    function resetQuiz(){quizRows=[];quizAnswers={};current=0;finished=false;render()}
+    function retryAll(){quizRows=[...quizSource()];quizAnswers={};current=0;finished=false;render()}
+    function retryWrong(){const wrong=quizSource().filter(q=>!quizAnswers[q.uid]||!quizAnswers[q.uid].correct);quizRows=wrong;quizAnswers={};current=0;finished=false;render()}
+    function showWrong(uid){setMode('browse');search.value=uid;render()}
     $('#browseTab').onclick=()=>setMode('browse');$('#quizTab').onclick=()=>setMode('quiz');$('#matchTab').onclick=()=>setMode('match');
-    chapter.onchange=section.onchange=filter.onchange=search.oninput=()=>{current=0;render()}; render();
+    chapter.onchange=section.onchange=filter.onchange=search.oninput=()=>{current=0;if(mode==='quiz'){quizRows=[];quizAnswers={};finished=false}render()}; render();
   </script>
 </body>
 </html>
