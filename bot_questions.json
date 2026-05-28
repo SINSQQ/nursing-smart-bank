@@ -1,7 +1,7 @@
 {
   "summary": {
-    "generated_at": "2026-05-28 15:38 UTC",
-    "source_file": "nursing_question_bank_complete_ordered_folder_with_pages.json",
+    "generated_at": "2026-05-28 17:58 UTC",
+    "source_file": "complete_zip_image_bank_corrected",
     "source_zip_pages_count": 26,
     "total_question_records": 450,
     "chapters": [
@@ -2775,16 +2775,20 @@
       "question": "Which antibiotic is commonly used to treat TB?",
       "correct_answer": "B",
       "explanation": "first-line anti-TB drug",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q66"
+      "uid": "ch2-q66",
+      "options": {
+        "A": "Amoxicillin",
+        "B": "Isoniazid",
+        "C": "Insulin",
+        "D": "Warfarin"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 67,
@@ -2792,16 +2796,20 @@
       "question": "To promote airway clearance in TB, the nurse should encourage:",
       "correct_answer": "A",
       "explanation": "thins secretions for expectoration",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q67"
+      "uid": "ch2-q67",
+      "options": {
+        "A": "Fluid intake",
+        "B": "Fluid restriction",
+        "C": "Bed rest only",
+        "D": "Fasting"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 68,
@@ -2809,16 +2817,20 @@
       "question": "Pyridoxine (Vitamin B6) is given to TB patients to prevent:",
       "correct_answer": "A",
       "explanation": "prevents isoniazid neuropathy",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q68"
+      "uid": "ch2-q68",
+      "options": {
+        "A": "Peripheral neuropathy",
+        "B": "Blindness",
+        "C": "Scurvy",
+        "D": "Rickets"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 69,
@@ -2826,33 +2838,41 @@
       "question": "TB patients are taught to cover their mouth when:",
       "correct_answer": "C",
       "explanation": "limits airborne transmission",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q69"
+      "uid": "ch2-q69",
+      "options": {
+        "A": "Eating",
+        "B": "Sleeping",
+        "C": "Coughing",
+        "D": "Walking"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 70,
       "section": "mcq",
-      "question": "Which room type is required for a hospitalised active TB patient?",
+      "question": "Which room type is required for a hospitalized active TB patient?",
       "correct_answer": "B",
       "explanation": "airborne isolation requires negative pressure",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q70"
+      "uid": "ch2-q70",
+      "options": {
+        "A": "Standard room",
+        "B": "Negative pressure room",
+        "C": "Suite",
+        "D": "Intensive care"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 71,
@@ -2860,16 +2880,20 @@
       "question": "TB can spread through the:",
       "correct_answer": "B",
       "explanation": "can disseminate via lymphatics",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q71"
+      "uid": "ch2-q71",
+      "options": {
+        "A": "Hair",
+        "B": "Lymph fluid",
+        "C": "Sweat",
+        "D": "Tears"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 72,
@@ -2877,16 +2901,20 @@
       "question": "A complete TB evaluation includes:",
       "correct_answer": "B",
       "explanation": "history is part of evaluation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q72"
+      "uid": "ch2-q72",
+      "options": {
+        "A": "Eye exam",
+        "B": "Medical history",
+        "C": "Hearing test",
+        "D": "Stress test"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 73,
@@ -2894,16 +2922,20 @@
       "question": "TB prevention in children involves:",
       "correct_answer": "B",
       "explanation": "BCG helps protect children",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q73"
+      "uid": "ch2-q73",
+      "options": {
+        "A": "Exercise",
+        "B": "Vaccination",
+        "C": "Dieting",
+        "D": "Antibiotics"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 74,
@@ -2911,16 +2943,20 @@
       "question": "Monitoring weight in TB patients is part of:",
       "correct_answer": "B",
       "explanation": "reflects nutritional status",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q74"
+      "uid": "ch2-q74",
+      "options": {
+        "A": "Airway clearance",
+        "B": "Promoting nutrition",
+        "C": "Hygiene",
+        "D": "Diagnosis"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 75,
@@ -2928,33 +2964,41 @@
       "question": "A complication of TB is involvement of the:",
       "correct_answer": "A",
       "explanation": "extrapulmonary TB may affect kidneys",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q75"
+      "uid": "ch2-q75",
+      "options": {
+        "A": "Kidneys",
+        "B": "Eyes",
+        "C": "Ears",
+        "D": "Skin"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 76,
       "section": "mcq",
-      "question": "COPD is characterised by:",
+      "question": "COPD is characterized by:",
       "correct_answer": "B",
       "explanation": "hallmark is chronic airflow limitation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q76"
+      "uid": "ch2-q76",
+      "options": {
+        "A": "Reversible airflow",
+        "B": "Airflow limitation",
+        "C": "High blood pressure",
+        "D": "Strong lungs"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 77,
@@ -2962,16 +3006,20 @@
       "question": "A major occupational risk factor for COPD is:",
       "correct_answer": "B",
       "explanation": "inhaled fumes damage airways",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q77"
+      "uid": "ch2-q77",
+      "options": {
+        "A": "Office work",
+        "B": "Chemical fumes",
+        "C": "Teaching",
+        "D": "Coding"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 78,
@@ -2979,16 +3027,20 @@
       "question": "Which enzyme inhibitor deficiency causes lung injury in COPD?",
       "correct_answer": "B",
       "explanation": "deficiency predisposes emphysema",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q78"
+      "uid": "ch2-q78",
+      "options": {
+        "A": "Insulin",
+        "B": "Alpha antitrypsin",
+        "C": "Pepsin",
+        "D": "Lipase"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 79,
@@ -2996,16 +3048,20 @@
       "question": "A physical sign of COPD is:",
       "correct_answer": "B",
       "explanation": "barrel chest from hyperinflation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q79"
+      "uid": "ch2-q79",
+      "options": {
+        "A": "Small chest",
+        "B": "Enlargement of chest",
+        "C": "Slow heart rate",
+        "D": "Weight gain"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 80,
@@ -3013,16 +3069,20 @@
       "question": "Pursed-lip breathing helps to:",
       "correct_answer": "A",
       "explanation": "prolongs exhalation, eases breathing",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q80"
+      "uid": "ch2-q80",
+      "options": {
+        "A": "Control rate of respiration",
+        "B": "Stop coughing",
+        "C": "Increase fever",
+        "D": "Reduce thirst"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 81,
@@ -3030,16 +3090,20 @@
       "question": "Which medication decreases airway inflammation in COPD?",
       "correct_answer": "B",
       "explanation": "suppresses airway inflammation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q81"
+      "uid": "ch2-q81",
+      "options": {
+        "A": "Bronchodilators",
+        "B": "Corticosteroids",
+        "C": "Antibiotics",
+        "D": "Antihistamines"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 82,
@@ -3047,16 +3111,20 @@
       "question": "Pulmonary rehabilitation involves:",
       "correct_answer": "A",
       "explanation": "rehab includes education and training",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q82"
+      "uid": "ch2-q82",
+      "options": {
+        "A": "Education on lung function",
+        "B": "Surgery",
+        "C": "Weight lifting",
+        "D": "Fasting"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 83,
@@ -3064,33 +3132,41 @@
       "question": "To clear secretions in COPD, the nurse uses:",
       "correct_answer": "B",
       "explanation": "mobilizes retained secretions",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q83"
+      "uid": "ch2-q83",
+      "options": {
+        "A": "Bed rest",
+        "B": "Postural drainage",
+        "C": "Cold compresses",
+        "D": "Massage"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 84,
       "section": "mcq",
-      "question": "Nebulised saline inhalations help to:",
+      "question": "Nebulized saline inhalations help to:",
       "correct_answer": "B",
       "explanation": "moistens and loosens mucus",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q84"
+      "uid": "ch2-q84",
+      "options": {
+        "A": "Stop pain",
+        "B": "Clear secretions",
+        "C": "Reduce fever",
+        "D": "Help sleep"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 85,
@@ -3098,16 +3174,20 @@
       "question": "COPD patients should monitor for tachycardia when taking:",
       "correct_answer": "B",
       "explanation": "bronchodilators may cause tachycardia",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q85"
+      "uid": "ch2-q85",
+      "options": {
+        "A": "Oxygen",
+        "B": "Bronchodilators",
+        "C": "Water",
+        "D": "Vitamins"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 86,
@@ -3115,16 +3195,20 @@
       "question": "A technique to manage fatigue in COPD is:",
       "correct_answer": "A",
       "explanation": "reduces oxygen demand",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q86"
+      "uid": "ch2-q86",
+      "options": {
+        "A": "Energy conservation",
+        "B": "Running",
+        "C": "Skipping meals",
+        "D": "Smoking"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 87,
@@ -3132,16 +3216,20 @@
       "question": "A sign of emphysema is:",
       "correct_answer": "B",
       "explanation": "sign of advanced hypoxemia",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q87"
+      "uid": "ch2-q87",
+      "options": {
+        "A": "Red skin",
+        "B": "Central cyanosis",
+        "C": "High energy",
+        "D": "Thick hair"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 88,
@@ -3149,16 +3237,20 @@
       "question": "COPD can lead to which skeletal issue?",
       "correct_answer": "B",
       "explanation": "COPD causes muscle dysfunction",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q88"
+      "uid": "ch2-q88",
+      "options": {
+        "A": "Strong bones",
+        "B": "Muscle dysfunction",
+        "C": "Increased height",
+        "D": "Fever"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 89,
@@ -3166,16 +3258,20 @@
       "question": "In COPD, wheezing is heard through a:",
       "correct_answer": "B",
       "explanation": "wheezes heard on auscultation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q89"
+      "uid": "ch2-q89",
+      "options": {
+        "A": "Thermometer",
+        "B": "Stethoscope",
+        "C": "Otoscope",
+        "D": "Sphygmomanometer"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 90,
@@ -3183,16 +3279,20 @@
       "question": "Depression is a possible ______ of COPD.",
       "correct_answer": "C",
       "explanation": "depression is a complication",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 2,
       "chapter_title": "Respiratory Tract Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch2-q90"
+      "uid": "ch2-q90",
+      "options": {
+        "A": "Cause",
+        "B": "Risk factor",
+        "C": "Complication",
+        "D": "Cure"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "uid": "ch2-matching-1",
@@ -3915,16 +4015,20 @@
       "question": "Which of the following is NOT a location for a peptic ulcer?",
       "correct_answer": "D",
       "explanation": "not a peptic-ulcer site",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q46"
+      "uid": "ch3-q46",
+      "options": {
+        "A": "Stomach",
+        "B": "Duodenum",
+        "C": "Esophagus",
+        "D": "Descending colon"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 47,
@@ -3932,16 +4036,20 @@
       "question": "Gastric ulcers are most common near the:",
       "correct_answer": "B",
       "explanation": "common distal gastric location",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q47"
+      "uid": "ch3-q47",
+      "options": {
+        "A": "Fundus",
+        "B": "Pylorus",
+        "C": "Cardia",
+        "D": "Esophagus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 48,
@@ -3949,16 +4057,20 @@
       "question": "Which bacteria is heavily linked to peptic ulcers?",
       "correct_answer": "C",
       "explanation": "classic ulcer-associated bacterium",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q48"
+      "uid": "ch3-q48",
+      "options": {
+        "A": "E. coli",
+        "B": "Streptococcus",
+        "C": "H. pylori",
+        "D": "Staphylococcus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 49,
@@ -3966,16 +4078,20 @@
       "question": "What is the primary cause of duodenal ulcers?",
       "correct_answer": "A",
       "explanation": "excess acid load",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q49"
+      "uid": "ch3-q49",
+      "options": {
+        "A": "Excessive acid",
+        "B": "Lack of acid",
+        "C": "Rapid stomach emptying only",
+        "D": "Excessive mucus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 50,
@@ -3983,33 +4099,41 @@
       "question": "Stress ulcers are most common in which parts of the GI tract?",
       "correct_answer": "B",
       "explanation": "usual stress-ulcer locations",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q50"
+      "uid": "ch3-q50",
+      "options": {
+        "A": "Esophagus and pylorus",
+        "B": "Proximal stomach and duodenum",
+        "C": "Distal stomach and jejunum",
+        "D": "Ileum and colon"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 51,
       "section": "mcq",
-      "question": "Pain that occurs 1–2 hours after a meal is characteristic of:",
+      "question": "Pain that occurs 1-2 hours after a meal is characteristic of:",
       "correct_answer": "A",
       "explanation": "pain 1–2 hours postmeal",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q51"
+      "uid": "ch3-q51",
+      "options": {
+        "A": "Gastric ulcer",
+        "B": "Duodenal ulcer",
+        "C": "Stress ulcer",
+        "D": "Pyloric obstruction"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 52,
@@ -4017,67 +4141,83 @@
       "question": "Which ulcer type is often relieved by food?",
       "correct_answer": "B",
       "explanation": "food relieves duodenal pain",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q52"
+      "uid": "ch3-q52",
+      "options": {
+        "A": "Gastric",
+        "B": "Duodenal",
+        "C": "Esophageal",
+        "D": "Stress"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 53,
       "section": "mcq",
-      "question": "Haematemesis is more likely to occur with which type of ulcer?",
+      "question": "Hematemesis is more likely to occur with which type of ulcer?",
       "correct_answer": "A",
       "explanation": "haematemesis more gastric",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q53"
+      "uid": "ch3-q53",
+      "options": {
+        "A": "Gastric",
+        "B": "Duodenal",
+        "C": "Stress",
+        "D": "All of the above"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 54,
       "section": "mcq",
-      "question": "Melaena refers to:",
+      "question": "Melena refers to:",
       "correct_answer": "B",
       "explanation": "black tarry stool",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q54"
+      "uid": "ch3-q54",
+      "options": {
+        "A": "Bloody vomit",
+        "B": "Black, tarry stool",
+        "C": "Clear liquid discharge",
+        "D": "Excessive gas"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 55,
       "section": "mcq",
-      "question": "The procedure used to visualise the esophagus, stomach, and duodenum directly is:",
+      "question": "The procedure used to visualize the esophagus, stomach, and duodenum directly is:",
       "correct_answer": "B",
       "explanation": "direct upper-GI visualization",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q55"
+      "uid": "ch3-q55",
+      "options": {
+        "A": "Upper GI series",
+        "B": "Esophagogastroduodenoscopy",
+        "C": "Abdominal X-ray",
+        "D": "Colonoscopy"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 56,
@@ -4085,16 +4225,20 @@
       "question": "Following an Upper GI series, why is a mild laxative sometimes recommended?",
       "correct_answer": "B",
       "explanation": "barium may constipate",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q56"
+      "uid": "ch3-q56",
+      "options": {
+        "A": "To stop diarrhea",
+        "B": "If constipation occurs due to barium",
+        "C": "To increase acid production",
+        "D": "To help with pain"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 57,
@@ -4102,50 +4246,62 @@
       "question": "A \"coffee ground\" appearance of vomitus indicates:",
       "correct_answer": "B",
       "explanation": "digested blood in vomitus",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q57"
+      "uid": "ch3-q57",
+      "options": {
+        "A": "Fresh bleeding",
+        "B": "Older blood affected by stomach acid",
+        "C": "High bile content",
+        "D": "Normal digestion"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 58,
       "section": "mcq",
-      "question": "Signs of orthostatic hypotension during haemorrhage include:",
+      "question": "Signs of orthostatic hypotension during hemorrhage include:",
       "correct_answer": "B",
       "explanation": "postural BP drop, dizziness",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q58"
+      "uid": "ch3-q58",
+      "options": {
+        "A": "High blood pressure when sitting",
+        "B": "Drop in BP and dizziness upon standing",
+        "C": "Flushed, warm skin",
+        "D": "Bradycardia"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 59,
       "section": "mcq",
-      "question": "Management of haemorrhage includes all the following EXCEPT:",
+      "question": "Management of hemorrhage includes all the following EXCEPT:",
       "correct_answer": "C",
       "explanation": "not haemorrhage management",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q59"
+      "uid": "ch3-q59",
+      "options": {
+        "A": "NGT insertion",
+        "B": "Saline lavage",
+        "C": "High-fiber diet",
+        "D": "Fluid replacement"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 60,
@@ -4153,33 +4309,41 @@
       "question": "Perforation leads to the emptying of GI contents into the:",
       "correct_answer": "B",
       "explanation": "contents spill intraperitoneally",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q60"
+      "uid": "ch3-q60",
+      "options": {
+        "A": "Esophagus",
+        "B": "Peritoneal cavity",
+        "C": "Pleural cavity",
+        "D": "Small intestine only"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 61,
       "section": "mcq",
-      "question": "A patient with a \"rigid, board-like\" abdomen likely has:",
+      "question": "A patient with a rigid, board-like abdomen likely has:",
       "correct_answer": "C",
       "explanation": "board-like abdomen suggests perforation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q61"
+      "uid": "ch3-q61",
+      "options": {
+        "A": "Pyloric obstruction",
+        "B": "Simple gastric ulcer",
+        "C": "Perforation",
+        "D": "Stress ulcer"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 62,
@@ -4187,50 +4351,62 @@
       "question": "Which is a medical emergency requiring urgent surgery?",
       "correct_answer": "C",
       "explanation": "needs urgent surgery",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q62"
+      "uid": "ch3-q62",
+      "options": {
+        "A": "Duodenal ulcer pain",
+        "B": "Gastric ulcer pain",
+        "C": "Perforation",
+        "D": "Pyloric inflammation"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 63,
       "section": "mcq",
-      "question": "Pyloric obstruction is caused by:",
+      "question": "Pyloric obstruction often causes which electrolyte imbalance?",
       "correct_answer": "B",
       "explanation": "flawed item; associated imbalance",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q63"
+      "uid": "ch3-q63",
+      "options": {
+        "A": "Hyperkalemia",
+        "B": "Hypokalemia",
+        "C": "Hyponatremia",
+        "D": "Hypercalcemia"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 64,
       "section": "mcq",
       "question": "Metabolic alkalosis in pyloric obstruction is caused by:",
-      "correct_answer": "D",
+      "correct_answer": "B",
       "explanation": "flawed item; closest cause",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q64"
+      "uid": "ch3-q64",
+      "options": {
+        "A": "Excessive diarrhea",
+        "B": "Persistent vomiting of stomach acid",
+        "C": "Rapid digestion",
+        "D": "Antibiotic therapy"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 65,
@@ -4238,16 +4414,20 @@
       "question": "Conservative therapy for ulcers includes:",
       "correct_answer": "B",
       "explanation": "rest is conservative care",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q65"
+      "uid": "ch3-q65",
+      "options": {
+        "A": "Increased smoking",
+        "B": "Physical and emotional rest",
+        "C": "Spicy food diet",
+        "D": "Avoiding follow-up care"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 66,
@@ -4255,16 +4435,20 @@
       "question": "The primary goal of using antibiotics in ulcer treatment is:",
       "correct_answer": "B",
       "explanation": "eradicates H. pylori",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q66"
+      "uid": "ch3-q66",
+      "options": {
+        "A": "To reduce acid",
+        "B": "To eradicate H. pylori",
+        "C": "To stop bleeding",
+        "D": "To speed up gastric emptying"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 67,
@@ -4272,16 +4456,20 @@
       "question": "Initial drugs of choice for medical management are:",
       "correct_answer": "B",
       "explanation": "traditional first-line neutralizer",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q67"
+      "uid": "ch3-q67",
+      "options": {
+        "A": "Antibiotics",
+        "B": "Antacids",
+        "C": "Anticholinergics",
+        "D": "Histamine blockers"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 68,
@@ -4289,16 +4477,20 @@
       "question": "Which medication type stops cholinergic stimulation of HCl?",
       "correct_answer": "B",
       "explanation": "blocks cholinergic acid stimulation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q68"
+      "uid": "ch3-q68",
+      "options": {
+        "A": "H2 blockers",
+        "B": "Anticholinergics",
+        "C": "Antacids",
+        "D": "Antibiotics"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 69,
@@ -4306,16 +4498,20 @@
       "question": "Gastroduodenostomy connects the remaining stomach to the:",
       "correct_answer": "C",
       "explanation": "remnant joins duodenum",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q69"
+      "uid": "ch3-q69",
+      "options": {
+        "A": "Jejunum",
+        "B": "Ileum",
+        "C": "Duodenum",
+        "D": "Esophagus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 70,
@@ -4323,16 +4519,20 @@
       "question": "Subtotal gastrectomy removes how much of the stomach?",
       "correct_answer": "B",
       "explanation": "distal third removed",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q70"
+      "uid": "ch3-q70",
+      "options": {
+        "A": "Proximal half",
+        "B": "Distal third",
+        "C": "The entire stomach",
+        "D": "Only the pylorus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 71,
@@ -4340,33 +4540,41 @@
       "question": "Which surgical procedure connects the esophagus to the jejunum?",
       "correct_answer": "C",
       "explanation": "esophagus joined to jejunum",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q71"
+      "uid": "ch3-q71",
+      "options": {
+        "A": "Subtotal gastrectomy",
+        "B": "Gastroduodenostomy",
+        "C": "Total gastrectomy",
+        "D": "Gastrojejunostomy"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 72,
       "section": "mcq",
-      "question": "\"Back diffusion\" refers to HCl damaging the:",
-      "correct_answer": "B",
+      "question": "Back diffusion refers to HCl damaging the:",
+      "correct_answer": "A",
       "explanation": "flawed item; intended mucosal damage",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q72"
+      "uid": "ch3-q72",
+      "options": {
+        "A": "Gastric epithelium",
+        "B": "Duodenal wall only",
+        "C": "Esophageal sphincter",
+        "D": "Pyloric valve"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 73,
@@ -4374,16 +4582,20 @@
       "question": "Protein-rich meals contribute to duodenal ulcers because they:",
       "correct_answer": "A",
       "explanation": "protein stimulates acid secretion",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q73"
+      "uid": "ch3-q73",
+      "options": {
+        "A": "Stimulate acid production",
+        "B": "Block the pylorus",
+        "C": "Neutralize all acid",
+        "D": "Kill H. pylori"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 74,
@@ -4391,84 +4603,104 @@
       "question": "Which ulcer type is most associated with rapid emptying of food?",
       "correct_answer": "B",
       "explanation": "linked with rapid emptying",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q74"
+      "uid": "ch3-q74",
+      "options": {
+        "A": "Gastric",
+        "B": "Duodenal",
+        "C": "Stress",
+        "D": "Esophageal"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 75,
       "section": "mcq",
-      "question": "Ischaemia is a major factor in:",
+      "question": "Ischemia is a major factor in:",
       "correct_answer": "C",
       "explanation": "ischemia drives stress ulcers",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q75"
+      "uid": "ch3-q75",
+      "options": {
+        "A": "Gastric ulcers",
+        "B": "Duodenal ulcers",
+        "C": "Stress ulcers",
+        "D": "Pyloric obstruction"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 76,
       "section": "mcq",
       "question": "In an Upper GI series, the patient ingests:",
-      "correct_answer": "C",
+      "correct_answer": "B",
       "explanation": "barium contrast is swallowed",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q76"
+      "uid": "ch3-q76",
+      "options": {
+        "A": "Saline",
+        "B": "Barium",
+        "C": "Dye via IV",
+        "D": "Antibiotics"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 77,
       "section": "mcq",
-      "question": "Clinical manifestations of haemorrhage include:",
+      "question": "Clinical manifestations of hemorrhage include:",
       "correct_answer": "B",
       "explanation": "hypovolemic cool clammy skin",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q77"
+      "uid": "ch3-q77",
+      "options": {
+        "A": "Warm, dry skin",
+        "B": "Cool, clammy skin",
+        "C": "Hypertension",
+        "D": "Slow heart rate"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 78,
       "section": "mcq",
-      "question": "The purpose of NGT suction in haemorrhage is to:",
+      "question": "The purpose of NGT suction in hemorrhage is to:",
       "correct_answer": "C",
       "explanation": "decompresses stomach, tracks bleeding",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q78"
+      "uid": "ch3-q78",
+      "options": {
+        "A": "Feed the patient",
+        "B": "Increase acid production",
+        "C": "Prevent distension and assess bleeding rate",
+        "D": "Deliver oxygen"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 79,
@@ -4476,16 +4708,20 @@
       "question": "Perforation pain can spread to:",
       "correct_answer": "C",
       "explanation": "pain becomes generalized",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q79"
+      "uid": "ch3-q79",
+      "options": {
+        "A": "Only the chest",
+        "B": "Only the legs",
+        "C": "All of the abdomen",
+        "D": "The arms"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 80,
@@ -4493,33 +4729,41 @@
       "question": "Which is NOT a management step for perforation?",
       "correct_answer": "C",
       "explanation": "fat is not treatment",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q80"
+      "uid": "ch3-q80",
+      "options": {
+        "A": "NPO",
+        "B": "Antibiotics",
+        "C": "High-fat diet",
+        "D": "I & O monitoring"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 81,
       "section": "mcq",
-      "question": "Pyloric obstruction is a symptom of:",
+      "question": "Pyloric obstruction is caused by:",
       "correct_answer": "B",
       "explanation": "due to edema/inflammation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q81"
+      "uid": "ch3-q81",
+      "options": {
+        "A": "Excessive exercise",
+        "B": "Inflammation or edema",
+        "C": "Low acid secretion",
+        "D": "Rapid stomach emptying"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 82,
@@ -4527,16 +4771,20 @@
       "question": "Abdominal bloating is a symptom of:",
       "correct_answer": "C",
       "explanation": "gastric outlet obstruction symptom",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q82"
+      "uid": "ch3-q82",
+      "options": {
+        "A": "Gastric ulcer",
+        "B": "Duodenal ulcer",
+        "C": "Pyloric obstruction",
+        "D": "Stress ulcer"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 83,
@@ -4544,16 +4792,20 @@
       "question": "Histamine H2 receptor antagonists work by:",
       "correct_answer": "B",
       "explanation": "blocks acid-secretory activator",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q83"
+      "uid": "ch3-q83",
+      "options": {
+        "A": "Neutralizing existing acid",
+        "B": "Blocking the activator of HCl secretion",
+        "C": "Eradicating H. pylori",
+        "D": "Coating the ulcer"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 84,
@@ -4561,16 +4813,20 @@
       "question": "Gastrojejunostomy is also known as a procedure that reconnects the:",
       "correct_answer": "C",
       "explanation": "stomach reconnected to jejunum",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q84"
+      "uid": "ch3-q84",
+      "options": {
+        "A": "Esophagus to duodenum",
+        "B": "Stomach to duodenum",
+        "C": "Stomach to jejunum",
+        "D": "Duodenum to jejunum"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 85,
@@ -4578,33 +4834,41 @@
       "question": "Dietary modifications are part of:",
       "correct_answer": "A",
       "explanation": "part of conservative care",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q85"
+      "uid": "ch3-q85",
+      "options": {
+        "A": "Conservative therapy",
+        "B": "Surgical therapy",
+        "C": "Emergency management only",
+        "D": "Diagnosis"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 86,
       "section": "mcq",
-      "question": "The recurrence rate of ulcers with H. pylori Rx is:",
+      "question": "The recurrence rate of ulcers with H. pylori infection is:",
       "correct_answer": "A",
       "explanation": "recurrence lower after treatment",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q86"
+      "uid": "ch3-q86",
+      "options": {
+        "A": "10-20%",
+        "B": "40-50%",
+        "C": "75-90%",
+        "D": "100%"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 87,
@@ -4612,50 +4876,62 @@
       "question": "Total gastrectomy is the:",
       "correct_answer": "B",
       "explanation": "complete stomach removal",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q87"
+      "uid": "ch3-q87",
+      "options": {
+        "A": "Partial removal of the stomach",
+        "B": "Full removal of the stomach",
+        "C": "Removal of the duodenum",
+        "D": "Removal of the pylorus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 88,
       "section": "mcq",
-      "question": "Management of haemorrhage requires replacing:",
+      "question": "Management of hemorrhage requires replacing:",
       "correct_answer": "C",
       "explanation": "replace blood, fluids, electrolytes",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q88"
+      "uid": "ch3-q88",
+      "options": {
+        "A": "Oxygen only",
+        "B": "Fiber",
+        "C": "Blood, fluid, and electrolytes",
+        "D": "Antibiotics only"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 89,
       "section": "mcq",
-      "question": "Bright red haematemesis is more likely in:",
+      "question": "Bright red hematemesis is more likely in:",
       "correct_answer": "A",
       "explanation": "upper gastric bleeding pattern",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q89"
+      "uid": "ch3-q89",
+      "options": {
+        "A": "Gastric ulcer",
+        "B": "Duodenal ulcer",
+        "C": "Pyloric obstruction",
+        "D": "Mild gastritis"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 90,
@@ -4663,16 +4939,20 @@
       "question": "Peptic ulcers are essentially:",
       "correct_answer": "B",
       "explanation": "mucosal erosive lesion",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 3,
       "chapter_title": "Digestive System Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch3-q90"
+      "uid": "ch3-q90",
+      "options": {
+        "A": "Tumors",
+        "B": "Erosions in the mucosal wall",
+        "C": "Infections of the outer wall",
+        "D": "Muscle tears"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "uid": "ch3-matching-1",
@@ -5247,16 +5527,20 @@
       "question": "Which of the following is a precipitating factor for angina?",
       "correct_answer": "B",
       "explanation": "cold exposure can trigger",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q32"
+      "uid": "ch4-q32",
+      "options": {
+        "A": "Sleeping in a warm room",
+        "B": "Drinking cold beverages",
+        "C": "Eating small frequent meals",
+        "D": "Slow walking on flat ground"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 33,
@@ -5264,16 +5548,20 @@
       "question": "The type of angina that occurs with recumbent position and is relieved by sitting is:",
       "correct_answer": "D",
       "explanation": "recumbency-triggered, relieved sitting",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q33"
+      "uid": "ch4-q33",
+      "options": {
+        "A": "Classic angina",
+        "B": "Nocturnal angina",
+        "C": "Unstable angina",
+        "D": "Angina decubitus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 34,
@@ -5281,16 +5569,20 @@
       "question": "Which type of angina is described as preinfarction angina?",
       "correct_answer": "B",
       "explanation": "progressive preinfarction pattern",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q34"
+      "uid": "ch4-q34",
+      "options": {
+        "A": "Classic angina",
+        "B": "Unstable angina",
+        "C": "Nocturnal angina",
+        "D": "Angina decubitus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 35,
@@ -5298,16 +5590,20 @@
       "question": "During an acute angina attack, the nurse would expect the patient's heart rhythm to be:",
       "correct_answer": "C",
       "explanation": "rhythm may become irregular",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q35"
+      "uid": "ch4-q35",
+      "options": {
+        "A": "Regular",
+        "B": "Bradycardic",
+        "C": "Irregular",
+        "D": "Normal sinus rhythm"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 36,
@@ -5315,16 +5611,20 @@
       "question": "Which diagnostic test typically shows NORMAL results in a patient with stable angina?",
       "correct_answer": "C",
       "explanation": "usually normal in stable angina",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q36"
+      "uid": "ch4-q36",
+      "options": {
+        "A": "Exercise stress test",
+        "B": "Coronary angiography",
+        "C": "Chest X-ray",
+        "D": "ECG during acute attack"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 37,
@@ -5332,33 +5632,41 @@
       "question": "The pharmacological treatment of angina includes all of the following EXCEPT:",
       "correct_answer": "D",
       "explanation": "not standard angina therapy",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q37"
+      "uid": "ch4-q37",
+      "options": {
+        "A": "Nitroglycerin",
+        "B": "Beta blockers",
+        "C": "Calcium channel blockers",
+        "D": "Diuretics"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 38,
       "section": "mcq",
-      "question": "The surgical revascularisation procedure for angina is:",
+      "question": "The surgical revascularization procedure for angina is:",
       "correct_answer": "B",
       "explanation": "CABG is revascularization surgery",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q38"
+      "uid": "ch4-q38",
+      "options": {
+        "A": "Percutaneous transluminal angioplasty only",
+        "B": "Coronary artery bypass grafting (CABG)",
+        "C": "Carotid endarterectomy",
+        "D": "Mitral valve replacement"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 39,
@@ -5366,16 +5674,20 @@
       "question": "Which of the following is the FIRST action when a patient experiences angina chest pain?",
       "correct_answer": "B",
       "explanation": "stop activity, give NTG",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q39"
+      "uid": "ch4-q39",
+      "options": {
+        "A": "Administer morphine IV",
+        "B": "Place sublingual nitroglycerin and stop activity",
+        "C": "Perform CPR",
+        "D": "Administer aspirin"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 40,
@@ -5383,16 +5695,20 @@
       "question": "Nitroglycerin tablets must be stored in:",
       "correct_answer": "B",
       "explanation": "protects tablets from degradation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q40"
+      "uid": "ch4-q40",
+      "options": {
+        "A": "A clear plastic container at room temperature",
+        "B": "A dark-colored glass bottle",
+        "C": "The refrigerator in any container",
+        "D": "A white paper envelope"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 41,
@@ -5400,16 +5716,20 @@
       "question": "If angina pain persists after the first nitroglycerin tablet, the patient should:",
       "correct_answer": "B",
       "explanation": "repeat after 3–5 minutes",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q41"
+      "uid": "ch4-q41",
+      "options": {
+        "A": "Wait 30 minutes before taking another",
+        "B": "Take a second tablet after 3-5 minutes",
+        "C": "Take 3 tablets simultaneously",
+        "D": "Drink cold water and rest"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 42,
@@ -5417,16 +5737,20 @@
       "question": "Common side effects of nitroglycerin include all of the following EXCEPT:",
       "correct_answer": "D",
       "explanation": "uncommon nitroglycerin effect",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q42"
+      "uid": "ch4-q42",
+      "options": {
+        "A": "Headache",
+        "B": "Flushing",
+        "C": "Dizziness",
+        "D": "Bradycardia"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 43,
@@ -5434,16 +5758,20 @@
       "question": "Patients with angina are advised to avoid physical exercise for how long after meals?",
       "correct_answer": "C",
       "explanation": "avoid exertion after meals",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q43"
+      "uid": "ch4-q43",
+      "options": {
+        "A": "30 minutes",
+        "B": "1 hour",
+        "C": "2 hours",
+        "D": "4 hours"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 44,
@@ -5451,16 +5779,20 @@
       "question": "Which dietary recommendation is appropriate for a patient with angina?",
       "correct_answer": "C",
       "explanation": "low-fat, small frequent meals",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q44"
+      "uid": "ch4-q44",
+      "options": {
+        "A": "High-fat, high-calorie diet",
+        "B": "Unrestricted caffeine intake",
+        "C": "A diet low in fat with small frequent meals",
+        "D": "Large meals three times daily"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 45,
@@ -5468,16 +5800,20 @@
       "question": "A patient with angina is going outside in cold weather. Which advice is MOST appropriate?",
       "correct_answer": "B",
       "explanation": "reduce cold-triggered angina",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q45"
+      "uid": "ch4-q45",
+      "options": {
+        "A": "Run to stay warm",
+        "B": "Dress warmly and cover mouth and nose with a scarf",
+        "C": "Avoid all outdoor activities permanently",
+        "D": "Exercise more intensely to tolerate the cold"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 46,
@@ -5485,16 +5821,20 @@
       "question": "Acute Myocardial Infarction (MI) is caused by:",
       "correct_answer": "C",
       "explanation": "prolonged ischemia causes necrosis",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q46"
+      "uid": "ch4-q46",
+      "options": {
+        "A": "Temporary ischemia with full recovery",
+        "B": "Reversible myocardial ischemia",
+        "C": "Irreversible necrosis of heart muscle secondary to prolonged ischemia",
+        "D": "Inflammation of the heart valves"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 47,
@@ -5502,16 +5842,20 @@
       "question": "Which of the following is NOT one of the six primary risk factors for MI?",
       "correct_answer": "C",
       "explanation": "female gender not listed",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q47"
+      "uid": "ch4-q47",
+      "options": {
+        "A": "Hyperlipidemia",
+        "B": "Hypertension",
+        "C": "Female gender",
+        "D": "Tobacco use"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 48,
@@ -5519,16 +5863,20 @@
       "question": "Which ECG changes are associated with acute MI?",
       "correct_answer": "B",
       "explanation": "classic MI ECG findings",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q48"
+      "uid": "ch4-q48",
+      "options": {
+        "A": "Peaked P waves and prolonged PR interval",
+        "B": "Q waves, ST segment changes, and T-wave changes",
+        "C": "Bundle branch block only",
+        "D": "Normal ECG in all cases"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 49,
@@ -5536,16 +5884,20 @@
       "question": "Which laboratory finding is expected in acute MI?",
       "correct_answer": "B",
       "explanation": "serum CPK rises",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q49"
+      "uid": "ch4-q49",
+      "options": {
+        "A": "Decreased serum CPK",
+        "B": "Increased serum CPK",
+        "C": "Normal cardiac enzymes",
+        "D": "Decreased troponin levels"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 50,
@@ -5553,16 +5905,20 @@
       "question": "The initial emergency ECG in a suspected MI patient should be performed within:",
       "correct_answer": "C",
       "explanation": "ECG within 10 minutes",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q50"
+      "uid": "ch4-q50",
+      "options": {
+        "A": "30 minutes of arrival",
+        "B": "20 minutes of arrival",
+        "C": "10 minutes of arrival",
+        "D": "1 hour of arrival"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 51,
@@ -5570,16 +5926,20 @@
       "question": "Sublingual nitroglycerin is CONTRAINDICATED in MI when systolic blood pressure is:",
       "correct_answer": "C",
       "explanation": "hypotension contraindicates NTG",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q51"
+      "uid": "ch4-q51",
+      "options": {
+        "A": "Below 120 mmHg",
+        "B": "Above 90 mmHg",
+        "C": "Below 90 mmHg",
+        "D": "Above 140 mmHg"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 52,
@@ -5587,16 +5947,20 @@
       "question": "Which analgesic is mentioned as part of the initial emergency management of acute MI?",
       "correct_answer": "C",
       "explanation": "listed emergency analgesic",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q52"
+      "uid": "ch4-q52",
+      "options": {
+        "A": "Ibuprofen",
+        "B": "Acetaminophen",
+        "C": "Meperidine",
+        "D": "Codeine"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 53,
@@ -5604,16 +5968,20 @@
       "question": "The dose of aspirin recommended in the initial management of acute MI is:",
       "correct_answer": "C",
       "explanation": "recommended chewed aspirin dose",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q53"
+      "uid": "ch4-q53",
+      "options": {
+        "A": "80 mg swallowed",
+        "B": "500 mg swallowed",
+        "C": "160-325 mg chewed",
+        "D": "1000 mg IV"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 54,
@@ -5621,33 +5989,41 @@
       "question": "Which of the following is a clinical manifestation of acute MI?",
       "correct_answer": "B",
       "explanation": "classic MI manifestations",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q54"
+      "uid": "ch4-q54",
+      "options": {
+        "A": "Pain relieved immediately by rest",
+        "B": "Diaphoresis and dyspnea",
+        "C": "No radiation of pain",
+        "D": "Gradual onset over days"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 55,
       "section": "mcq",
       "question": "Syncope in the context of acute MI is described as:",
-      "correct_answer": "C",
+      "correct_answer": "B",
       "explanation": "source corrupted; closest fit",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q55"
+      "uid": "ch4-q55",
+      "options": {
+        "A": "Chest pain at rest",
+        "B": "Fainting or near fainting without other cause",
+        "C": "Severe headache",
+        "D": "Leg edema"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 56,
@@ -5655,16 +6031,20 @@
       "question": "One of the main goals of cardiac rehabilitation is:",
       "correct_answer": "B",
       "explanation": "stated rehabilitation goal",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q56"
+      "uid": "ch4-q56",
+      "options": {
+        "A": "Complete bed rest for 6 months",
+        "B": "Helping the client live as full, vital, and productive a life as possible",
+        "C": "Discouraging all physical activity",
+        "D": "Eliminating all social interaction"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 57,
@@ -5672,33 +6052,41 @@
       "question": "How many sub-goals of rehabilitation are specifically listed in the lecture?",
       "correct_answer": "D",
       "explanation": "lecture lists six sub-goals",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q57"
+      "uid": "ch4-q57",
+      "options": {
+        "A": "Three",
+        "B": "Four",
+        "C": "Five",
+        "D": "Six"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 58,
       "section": "mcq",
-      "question": "Which nursing diagnosis is appropriate for a patient experiencing chest pain due to myocardial ischaemia?",
+      "question": "Which nursing diagnosis is appropriate for a patient experiencing chest pain due to myocardial ischemia?",
       "correct_answer": "B",
       "explanation": "direct ischemic pain diagnosis",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q58"
+      "uid": "ch4-q58",
+      "options": {
+        "A": "Impaired mobility related to fatigue",
+        "B": "Chest pain related to myocardial ischemia",
+        "C": "Fluid volume excess related to cardiac failure",
+        "D": "Impaired gas exchange related to pneumonia"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 59,
@@ -5706,50 +6094,62 @@
       "question": "The nursing intervention of health teaching for angina patients should include:",
       "correct_answer": "B",
       "explanation": "disease, lifestyle, complications teaching",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q59"
+      "uid": "ch4-q59",
+      "options": {
+        "A": "Encouraging heavy exercise daily",
+        "B": "Nature of the disease, lifestyle changes, and ways to avoid complications",
+        "C": "Advising the patient to ignore chest pain",
+        "D": "Discouraging family involvement"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 60,
       "section": "mcq",
       "question": "Which of the following is an objective indicator of angina?",
-      "correct_answer": "B",
+      "correct_answer": "C",
       "explanation": "objective attack indicator",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q60"
+      "uid": "ch4-q60",
+      "options": {
+        "A": "Patient reporting squeezing chest pain",
+        "B": "Family history of CAD",
+        "C": "Irregular heart rhythm during an acute attack",
+        "D": "History of hypertension"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 61,
       "section": "mcq",
-      "question": "The psychosocial nursing diagnosis for angina patients commonly includes:",
+      "question": "Which dietary substance should be restricted in angina patients because it increases heart rate?",
       "correct_answer": "B",
       "explanation": "source corrupted; likely anxiety",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q61"
+      "uid": "ch4-q61",
+      "options": {
+        "A": "Sodium",
+        "B": "Caffeine",
+        "C": "Potassium",
+        "D": "Calcium"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 62,
@@ -5757,33 +6157,41 @@
       "question": "A patient with angina reports pain only at night. This is best classified as:",
       "correct_answer": "C",
       "explanation": "angina occurring at night",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q62"
+      "uid": "ch4-q62",
+      "options": {
+        "A": "Classic angina",
+        "B": "Unstable angina",
+        "C": "Nocturnal angina",
+        "D": "Angina decubitus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 63,
       "section": "mcq",
-      "question": "Which dietary substance should be restricted in angina patients because it increases heart rate?",
+      "question": "The psychosocial nursing diagnosis for angina patients commonly includes:",
       "correct_answer": "B",
       "explanation": "raises heart rate",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q63"
+      "uid": "ch4-q63",
+      "options": {
+        "A": "Disturbed body image related to surgery",
+        "B": "Anxiety related to fear of death",
+        "C": "Chronic pain related to arthritis",
+        "D": "Ineffective airway clearance"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 64,
@@ -5791,16 +6199,20 @@
       "question": "During a nursing assessment for angina, which question is MOST important to ask?",
       "correct_answer": "B",
       "explanation": "source corrupted; best fit",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q64"
+      "uid": "ch4-q64",
+      "options": {
+        "A": "What medications do you take for your joints?",
+        "B": "When do attacks tend to occur and how long do they last?",
+        "C": "Do you have a family history of diabetes?",
+        "D": "What is your level of education?"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 65,
@@ -5808,33 +6220,41 @@
       "question": "The nitroglycerin tablet for angina should be placed:",
       "correct_answer": "B",
       "explanation": "sublingual administration required",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q65"
+      "uid": "ch4-q65",
+      "options": {
+        "A": "Swallowed with a full glass of water",
+        "B": "Under the tongue (sublingual)",
+        "C": "Applied as a patch to the chest",
+        "D": "Dissolved in water and drunk"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 66,
       "section": "mcq",
       "question": "ECG changes during an acute angina attack may show:",
-      "correct_answer": "D",
+      "correct_answer": "B",
       "explanation": "transient ST depression/elevation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q66"
+      "uid": "ch4-q66",
+      "options": {
+        "A": "Q waves and ST elevation permanently",
+        "B": "ST segment depression or elevation",
+        "C": "Normal findings only",
+        "D": "Delta waves"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 67,
@@ -5842,16 +6262,20 @@
       "question": "Which of the following best describes the pain of angina?",
       "correct_answer": "B",
       "explanation": "substernal pressure/tightness description",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q67"
+      "uid": "ch4-q67",
+      "options": {
+        "A": "Sharp, stabbing pain in the back",
+        "B": "Deep pressure or tightness behind the sternum",
+        "C": "Burning pain in the epigastrium only",
+        "D": "Throbbing headache"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 68,
@@ -5859,16 +6283,20 @@
       "question": "Coronary angiography is used to:",
       "correct_answer": "B",
       "explanation": "visualizes coronary blockages",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q68"
+      "uid": "ch4-q68",
+      "options": {
+        "A": "Measure blood pressure accurately",
+        "B": "Visualize coronary arteries and identify blockages",
+        "C": "Assess kidney function",
+        "D": "Measure oxygen saturation"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 69,
@@ -5876,16 +6304,20 @@
       "question": "A patient with angina should be taught to:",
       "correct_answer": "B",
       "explanation": "alternate activity with rest",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q69"
+      "uid": "ch4-q69",
+      "options": {
+        "A": "Engage in vigorous exercise daily without restriction",
+        "B": "Alternate activities with periods of rest",
+        "C": "Avoid all forms of exercise permanently",
+        "D": "Exercise only in cold weather"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 70,
@@ -5893,16 +6325,20 @@
       "question": "Which of the following is the correct statement about nitroglycerin prophylactic use?",
       "correct_answer": "B",
       "explanation": "take before known triggers",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q70"
+      "uid": "ch4-q70",
+      "options": {
+        "A": "It should only be taken after pain begins",
+        "B": "It should be taken prophylactically before activities known to cause pain",
+        "C": "It should not be taken more than once daily",
+        "D": "It is only for emergency use in the hospital"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 71,
@@ -5910,101 +6346,125 @@
       "question": "Which of the following is a risk factor for angina listed in the lecture?",
       "correct_answer": "D",
       "explanation": "diabetes is risk factor",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q71"
+      "uid": "ch4-q71",
+      "options": {
+        "A": "Female gender",
+        "B": "Type B personality",
+        "C": "Regular exercise",
+        "D": "Diabetes mellitus"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 72,
       "section": "mcq",
-      "question": "Which of the following is a risk factor for angina listed in the lecture?",
-      "correct_answer": "C",
+      "question": "A feeling of weakness or numbness in the arms associated with angina is:",
+      "correct_answer": "B",
       "explanation": "duplicated item; correct statement",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q72"
+      "uid": "ch4-q72",
+      "options": {
+        "A": "A rare finding unrelated to angina",
+        "B": "A possible accompanying symptom to chest pain",
+        "C": "A sign of stroke only",
+        "D": "Always a sign of MI"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 73,
       "section": "mcq",
-      "question": "Which statement about Type A personality and angina is correct?",
+      "question": "What is the goal of reducing anxiety in a patient with angina?",
       "correct_answer": "B",
       "explanation": "Type A is listed",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q73"
+      "uid": "ch4-q73",
+      "options": {
+        "A": "To increase adrenaline release",
+        "B": "To prevent further episodes and improve coping",
+        "C": "To reduce the need for medication",
+        "D": "To eliminate the need for nursing assessment"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 74,
       "section": "mcq",
-      "question": "The patient teaching about Type A personality in angina should emphasise:",
+      "question": "Which of the following statements about obesity and angina is correct?",
       "correct_answer": "B",
       "explanation": "source corrupted; best fit",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q74"
+      "uid": "ch4-q74",
+      "options": {
+        "A": "Obesity is NOT a risk factor for angina",
+        "B": "Obesity is listed as a risk factor for angina",
+        "C": "Obesity only affects the lungs",
+        "D": "Overweight patients are protected from angina"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 75,
       "section": "mcq",
-      "question": "A complication of TB is involvement of the:",
+      "question": "Which test is used to evaluate cardiac function under physical stress?",
       "correct_answer": "C",
       "explanation": "likely conduction complication",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q75"
+      "uid": "ch4-q75",
+      "options": {
+        "A": "Chest X-ray",
+        "B": "Echocardiogram at rest",
+        "C": "Exercise stress test",
+        "D": "CT scan"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 76,
       "section": "mcq",
-      "question": "In CRF management, which associated diseases must be controlled first?",
+      "question": "Beta blockers are used in angina management because they:",
       "correct_answer": "B",
       "explanation": "source corrupted; best fit",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q76"
+      "uid": "ch4-q76",
+      "options": {
+        "A": "Increase heart rate and contractility",
+        "B": "Reduce heart rate and myocardial oxygen demand",
+        "C": "Cause coronary vasoconstriction",
+        "D": "Increase blood pressure"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 77,
@@ -6012,271 +6472,335 @@
       "question": "Which imaging technique is mentioned as a diagnostic test for acute MI?",
       "correct_answer": "B",
       "explanation": "both are listed tests",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q77"
+      "uid": "ch4-q77",
+      "options": {
+        "A": "X-ray only",
+        "B": "MRI and Echocardiography",
+        "C": "CT colonoscopy",
+        "D": "Ultrasound of the abdomen"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 78,
       "section": "mcq",
-      "question": "Beta blockers are used in angina management because they:",
+      "question": "The primary nursing intervention for angina is:",
       "correct_answer": "B",
       "explanation": "lowers oxygen demand",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q78"
+      "uid": "ch4-q78",
+      "options": {
+        "A": "Administration of antibiotics",
+        "B": "Prevention and controlling of chest pain",
+        "C": "Fluid restriction",
+        "D": "Positioning the patient in Trendelenburg"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 79,
       "section": "mcq",
-      "question": "Which test is used to evaluate cardiac function under physical stress?",
-      "correct_answer": "C",
+      "question": "Psychosocial factors in cardiac rehabilitation include:",
+      "correct_answer": "B",
       "explanation": "evaluates stress response",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q79"
+      "uid": "ch4-q79",
+      "options": {
+        "A": "Only physical exercise programs",
+        "B": "Changing psychosocial factors affecting recovery from CAD",
+        "C": "Bed rest and isolation",
+        "D": "Avoiding family contact"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 80,
       "section": "mcq",
-      "question": "Which of the following statements about obesity and angina is correct?",
+      "question": "The term preinfarction angina refers to:",
       "correct_answer": "B",
       "explanation": "obesity is listed risk",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q80"
+      "uid": "ch4-q80",
+      "options": {
+        "A": "Classic angina relieved by rest",
+        "B": "Unstable angina with progressive worsening",
+        "C": "Angina only at night",
+        "D": "Angina related to lying down"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 81,
       "section": "mcq",
-      "question": "Which of the following statements about obesity and angina is correct?",
-      "correct_answer": "B",
+      "question": "Risk factor modification for angina includes all of the following EXCEPT:",
+      "correct_answer": "C",
       "explanation": "source corrupted; closest fit",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q81"
+      "uid": "ch4-q81",
+      "options": {
+        "A": "Stopping smoking",
+        "B": "Weight loss",
+        "C": "Increasing alcohol consumption",
+        "D": "Diet modification"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 82,
       "section": "mcq",
-      "question": "What is the goal of reducing anxiety in a patient with angina?",
+      "question": "In acute MI management, oxygen is administered via:",
       "correct_answer": "B",
       "explanation": "prevent episodes, improve coping",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q82"
+      "uid": "ch4-q82",
+      "options": {
+        "A": "Face mask at 10 L/min",
+        "B": "Nasal prongs with IV access and ECG monitoring",
+        "C": "Mechanical ventilation immediately",
+        "D": "Oxygen tent"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 83,
       "section": "mcq",
-      "question": "The primary nursing assessment question to the nurse is the one listed in the lecture?",
+      "question": "Which of the following is a clinical manifestation of angina that represents the MOST severe form?",
       "correct_answer": "B",
       "explanation": "helps characterize angina pattern",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q83"
+      "uid": "ch4-q83",
+      "options": {
+        "A": "Mild upper substernal pressure",
+        "B": "Agonizing pain with severe apprehension and feeling of impending death",
+        "C": "A dull ache in the lower back",
+        "D": "Nausea and vomiting"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 84,
       "section": "mcq",
-      "question": "Psychosocial factors in cardiac rehabilitation include:",
+      "question": "What should a patient with angina do to prevent an attack before known precipitating activities?",
       "correct_answer": "B",
       "explanation": "psychosocial recovery matters",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q84"
+      "uid": "ch4-q84",
+      "options": {
+        "A": "Avoid all activity",
+        "B": "Take prophylactic sublingual nitroglycerin before the activity",
+        "C": "Take a sedative",
+        "D": "Eat a large meal for energy"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 85,
       "section": "mcq",
-      "question": "Risk factor modification for angina includes all of the following EXCEPT:",
-      "correct_answer": "C",
+      "question": "A patient with angina walks against the wind and develops chest pain. This is because:",
+      "correct_answer": "B",
       "explanation": "not a modification strategy",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q85"
+      "uid": "ch4-q85",
+      "options": {
+        "A": "Wind increases body temperature",
+        "B": "Cold wind causes vasoconstriction and increases cardiac workload",
+        "C": "Walking is always harmful for angina patients",
+        "D": "Wind reduces blood pressure"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 86,
       "section": "mcq",
-      "question": "In acute MI management, oxygen is administered via:",
+      "question": "When teaching about nitroglycerin, the nurse should emphasize that the tablet works by:",
       "correct_answer": "B",
       "explanation": "nasal prongs with monitoring",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q86"
+      "uid": "ch4-q86",
+      "options": {
+        "A": "Slowing the heart rate",
+        "B": "Causing vasodilation to reduce myocardial ischemia",
+        "C": "Increasing blood pressure",
+        "D": "Dissolving blood clots directly"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 87,
       "section": "mcq",
-      "question": "Which of the following is a clinical manifestation of angina that represents the MOST severe form?",
+      "question": "A patient's ECG during an angina attack shows ST depression. This indicates:",
       "correct_answer": "B",
       "explanation": "unstable angina most severe",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q87"
+      "uid": "ch4-q87",
+      "options": {
+        "A": "Normal cardiac function",
+        "B": "Myocardial ischemia",
+        "C": "Complete heart block",
+        "D": "Atrial fibrillation"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 88,
       "section": "mcq",
-      "question": "The term 'preinfarction angina' refers to:",
-      "correct_answer": "D",
+      "question": "The nursing assessment question 'Is the onset of pain gradual or sudden?' is important because:",
+      "correct_answer": "B",
       "explanation": "unstable angina before MI",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q88"
+      "uid": "ch4-q88",
+      "options": {
+        "A": "It determines the patient's pain tolerance",
+        "B": "It helps characterize the nature and pattern of angina for diagnosis and management",
+        "C": "It assesses the patient's education level",
+        "D": "It guides fluid management"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 89,
       "section": "mcq",
-      "question": "Which of the following conditions is associated with an increased risk of UTI due to urinary stasis?",
+      "question": "Which statement about Type A personality and angina is correct?",
       "correct_answer": "B",
       "explanation": "source corrupted; closest fit",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q89"
+      "uid": "ch4-q89",
+      "options": {
+        "A": "Type A personality is protective against angina",
+        "B": "Type A personality is listed as a risk factor for angina",
+        "C": "Personality type has no relation to heart disease",
+        "D": "Only Type B personality is at risk"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 90,
       "section": "mcq",
-      "question": "Which of the following is the correct statement about nitroglycerin prophylactic use?",
+      "question": "The patient teaching about activity in angina should emphasize:",
       "correct_answer": "B",
       "explanation": "options match beta-blocker effect",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q90"
+      "uid": "ch4-q90",
+      "options": {
+        "A": "Avoid all physical activity",
+        "B": "Moderate daily exercise that does not precipitate pain, with rest periods",
+        "C": "Exercise as intensely as possible",
+        "D": "No restrictions on activity"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 91,
       "section": "mcq",
-      "question": "Which of the following is the MOST appropriate advice for a patient regarding smoking?",
+      "question": "In a patient with acute MI, impairment of cognitive function without another cause is:",
       "correct_answer": "C",
       "explanation": "complete smoking cessation",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q91"
+      "uid": "ch4-q91",
+      "options": {
+        "A": "Expected and normal",
+        "B": "Unrelated to MI",
+        "C": "A recognized clinical manifestation",
+        "D": "Only seen in elderly patients"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "number": 92,
       "section": "mcq",
-      "question": "Which of the following correctly describes pressure in the lower pelvis as a symptom?",
+      "question": "Which of the following is the MOST appropriate advice for a patient with angina regarding smoking?",
       "correct_answer": "C",
       "explanation": "source corrupted; closest fit",
-      "missing": [
-        "options_not_visible_in_source_pdf"
-      ],
       "chapter": 4,
       "chapter_title": "Cardiovascular Disorders",
       "section_name": "MCQ",
       "review_flags": [
-        "missing_options"
+        "checked_from_image"
       ],
-      "uid": "ch4-q92"
+      "uid": "ch4-q92",
+      "options": {
+        "A": "Cut down gradually",
+        "B": "Switch to low-tar cigarettes",
+        "C": "Stop smoking completely",
+        "D": "Only smoke indoors"
+      },
+      "source_correction": "corrected_from_zip_image_bank_2026-05-28"
     },
     {
       "uid": "ch4-matching-1",
@@ -6665,7 +7189,7 @@
     }
   ],
   "qa_check": {
-    "rechecked_at_utc": "2026-05-28 15:25",
+    "rechecked_at_utc": "2026-05-28 17:58",
     "ordered_zip_pages_count": 26,
     "all_zip_pages_listed_in_json": true,
     "fixed_flagged_page": "WhatsApp Image 2026-05-28 at 12.59.29 PM (1).jpeg added/transcribed for Respiratory MCQ 46-65.",
@@ -6684,33 +7208,7 @@
         "question_count": 100,
         "missing_question_numbers": [],
         "duplicate_question_numbers": [],
-        "mcq_without_options": [
-          66,
-          67,
-          68,
-          69,
-          70,
-          71,
-          72,
-          73,
-          74,
-          75,
-          76,
-          77,
-          78,
-          79,
-          80,
-          81,
-          82,
-          83,
-          84,
-          85,
-          86,
-          87,
-          88,
-          89,
-          90
-        ]
+        "mcq_without_options": []
       },
       {
         "chapter": 3,
@@ -6718,53 +7216,7 @@
         "question_count": 100,
         "missing_question_numbers": [],
         "duplicate_question_numbers": [],
-        "mcq_without_options": [
-          46,
-          47,
-          48,
-          49,
-          50,
-          51,
-          52,
-          53,
-          54,
-          55,
-          56,
-          57,
-          58,
-          59,
-          60,
-          61,
-          62,
-          63,
-          64,
-          65,
-          66,
-          67,
-          68,
-          69,
-          70,
-          71,
-          72,
-          73,
-          74,
-          75,
-          76,
-          77,
-          78,
-          79,
-          80,
-          81,
-          82,
-          83,
-          84,
-          85,
-          86,
-          87,
-          88,
-          89,
-          90
-        ]
+        "mcq_without_options": []
       },
       {
         "chapter": 4,
@@ -6772,69 +7224,7 @@
         "question_count": 100,
         "missing_question_numbers": [],
         "duplicate_question_numbers": [],
-        "mcq_without_options": [
-          32,
-          33,
-          34,
-          35,
-          36,
-          37,
-          38,
-          39,
-          40,
-          41,
-          42,
-          43,
-          44,
-          45,
-          46,
-          47,
-          48,
-          49,
-          50,
-          51,
-          52,
-          53,
-          54,
-          55,
-          56,
-          57,
-          58,
-          59,
-          60,
-          61,
-          62,
-          63,
-          64,
-          65,
-          66,
-          67,
-          68,
-          69,
-          70,
-          71,
-          72,
-          73,
-          74,
-          75,
-          76,
-          77,
-          78,
-          79,
-          80,
-          81,
-          82,
-          83,
-          84,
-          85,
-          86,
-          87,
-          88,
-          89,
-          90,
-          91,
-          92
-        ]
+        "mcq_without_options": []
       }
     ]
   }

@@ -1,15 +1,108 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nursing Smart Bank</title><style>
-:root{font-family:Arial,Tahoma,sans-serif;color:#17202a;background:#f5f7fb}*{box-sizing:border-box}body{margin:0}.top{position:sticky;top:0;background:#fff;border-bottom:1px solid #d8dee9;padding:14px 18px;z-index:2}.title{font-size:22px;font-weight:700}.sub{color:#526070;font-size:13px;margin-top:4px}.toolbar{display:grid;grid-template-columns:1fr repeat(3,auto);gap:8px;margin-top:12px}input,select,button{font:inherit;border:1px solid #c9d1dc;border-radius:6px;padding:9px 10px;background:#fff}button{cursor:pointer;background:#1f6feb;color:#fff;border-color:#1f6feb}.wrap{max-width:1160px;margin:0 auto;padding:18px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}.stat{background:#fff;border:1px solid #dde3ec;border-radius:8px;padding:12px}.stat b{display:block;font-size:22px}.card{background:#fff;border:1px solid #dde3ec;border-radius:8px;padding:14px;margin:10px 0}.meta{display:flex;gap:8px;flex-wrap:wrap;color:#526070;font-size:12px;margin-bottom:8px}.tag{border:1px solid #d0d7e2;border-radius:99px;padding:3px 7px}.flag{background:#fff3cd;color:#7a4d00;border-color:#f3d27a}.q{font-weight:700;line-height:1.35}.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}.opt{border:1px solid #e0e6ef;border-radius:6px;padding:8px}.answer{margin-top:10px;color:#0f6b3f;font-weight:700}.actions{display:flex;gap:8px;margin-top:10px}.actions button{background:#fff;color:#1f2937;border-color:#c9d1dc}.actions button.bad{color:#b42318}.actions button.good{color:#087443}.hidden{display:none}@media(max-width:760px){.toolbar,.stats,.opts{grid-template-columns:1fr}.top{position:static}}
-</style></head><body><div class="top"><div class="title">بنك تمريض بالغين - مراجعة ذكية</div><div class="sub">فلترة الأسئلة، تحديد الخطأ، إعادة بنك بالأسئلة الخطأ، وتصدير JSON.</div><div class="toolbar"><input id="search" placeholder="بحث في السؤال..."><select id="chapter"><option value="">كل الفصول</option></select><select id="filter"><option value="all">كل الأسئلة</option><option value="review">أسئلة تحتاج مراجعة</option><option value="wrong">الأسئلة الخطأ عندي</option><option value="complete">أسئلة كاملة فقط</option></select><button id="exportWrong">تصدير الخطأ</button></div></div><main class="wrap"><section class="stats" id="stats"></section><section id="list"></section></main><script src="data.js"></script><script>
-const D=window.BANK_DATA;let wrong=new Set(JSON.parse(localStorage.getItem('wrongQuestions')||'[]'));let reviewMark=new Set(JSON.parse(localStorage.getItem('reviewQuestions')||'[]'));
-const $=s=>document.querySelector(s);const list=$('#list'), chapter=$('#chapter'), filter=$('#filter'), search=$('#search');
-for(const c of D.summary.chapters){let o=document.createElement('option');o.value=c.chapter;o.textContent=`Chapter ${c.chapter} - ${c.title}`;chapter.appendChild(o)}
-function save(){localStorage.setItem('wrongQuestions',JSON.stringify([...wrong]));localStorage.setItem('reviewQuestions',JSON.stringify([...reviewMark]))}
-function stats(rows){$('#stats').innerHTML=`<div class=stat><b>${D.summary.total_question_records}</b>كل السجلات</div><div class=stat><b>${D.summary.source_zip_pages_count}</b>صفحات ZIP</div><div class=stat><b>${D.summary.needs_review_count}</b>مراجعة مصدر</div><div class=stat><b>${wrong.size}</b>غلط عندك</div>`}
-function row(q){let flags=[...(q.review_flags||[])]; if(wrong.has(q.uid))flags.push('wrong_bank'); if(reviewMark.has(q.uid))flags.push('manual_review');
-let opts=q.options?`<div class=opts>${Object.entries(q.options).map(([k,v])=>`<div class=opt><b>${k}.</b> ${v||''}</div>`).join('')}</div>`:'';
-let ans=q.correct_answer||q.answer;return `<article class=card><div class=meta><span class=tag>Ch ${q.chapter}</span><span class=tag>${q.section_name||q.section}</span><span class=tag>#${q.number??''}</span>${flags.map(f=>`<span class="tag flag">${f}</span>`).join('')}</div><div class=q>${q.question||''}</div>${opts}${ans?`<div class=answer>Answer: ${ans}</div>`:''}${q.explanation?`<div class=sub>${q.explanation}</div>`:''}<div class=actions><button class=good onclick="wrong.delete('${q.uid}');save();render()">صح عندي</button><button class=bad onclick="wrong.add('${q.uid}');save();render()">حطه في بنك الغلط</button><button onclick="reviewMark.add('${q.uid}');save();render()">مراجعة</button></div></article>`}
-function render(){let rows=D.questions.filter(q=>{if(chapter.value&&String(q.chapter)!==chapter.value)return false;let s=search.value.trim().toLowerCase();if(s&&!JSON.stringify(q).toLowerCase().includes(s))return false;if(filter.value==='review'&&!(q.review_flags||[]).length&&!reviewMark.has(q.uid))return false;if(filter.value==='wrong'&&!wrong.has(q.uid))return false;if(filter.value==='complete'&&(q.review_flags||[]).includes('missing_options'))return false;return true});stats(rows);list.innerHTML=rows.map(row).join('')||'<div class=card>لا توجد نتائج</div>'}
-$('#exportWrong').onclick=()=>{let rows=D.questions.filter(q=>wrong.has(q.uid));let blob=new Blob([JSON.stringify({exported_at:new Date().toISOString(),questions:rows},null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='wrong_questions_bank.json';a.click()}
-chapter.onchange=filter.onchange=search.oninput=render;render();
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nursing Smart Bank Quiz</title>
+  <style>
+    :root{font-family:Arial,Tahoma,sans-serif;color:#18212f;background:#f4f6f8}
+    *{box-sizing:border-box}body{margin:0}.top{position:sticky;top:0;z-index:3;background:#fff;border-bottom:1px solid #d9e0e8;padding:12px 16px}
+    .bar{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center}
+    h1{font-size:20px;margin:0}.sub{font-size:12px;color:#5e6b7a;margin-top:3px}
+    select,input,button{font:inherit;border:1px solid #cbd5df;border-radius:6px;background:#fff;padding:9px 10px}
+    button{cursor:pointer;background:#1769e0;color:#fff;border-color:#1769e0}.ghost{background:#fff;color:#1d2735}
+    .wrap{max-width:1180px;margin:0 auto;padding:16px}.controls{display:grid;grid-template-columns:1fr 170px 170px 150px;gap:8px;margin-bottom:12px}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tabs button{background:#fff;color:#1d2735}.tabs button.active{background:#1769e0;color:#fff}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}.stat{background:#fff;border:1px solid #dde4ec;border-radius:8px;padding:12px}.stat b{display:block;font-size:22px}
+    .grid{display:grid;grid-template-columns:1fr 330px;gap:12px}.panel,.card{background:#fff;border:1px solid #dde4ec;border-radius:8px}
+    .panel{padding:14px}.card{padding:14px;margin-bottom:10px}.meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:9px}.tag{font-size:12px;color:#526070;border:1px solid #d5dde7;border-radius:999px;padding:3px 7px}
+    .q{font-weight:700;line-height:1.4}.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.opt{border:1px solid #dfe6ef;border-radius:6px;padding:9px;background:#fff;text-align:left;color:#18212f}
+    .opt.correct{border-color:#159947;background:#eaf8ef}.opt.wrong{border-color:#cf2e2e;background:#fdecec}.answer{margin-top:10px;font-weight:700;color:#0b6b3d}.muted{color:#647184;font-size:13px}
+    .sideList{max-height:70vh;overflow:auto}.sideItem{width:100%;display:block;text-align:left;margin:0 0 6px;background:#fff;color:#18212f;border-color:#d9e0e8}.sideItem.active{border-color:#1769e0}
+    .match{display:grid;grid-template-columns:1fr;gap:8px;margin-top:10px}.matchRow{border:1px solid #dfe6ef;border-radius:6px;padding:10px}.hidden{display:none}
+    @media(max-width:850px){.bar,.controls,.stats,.grid,.opts{grid-template-columns:1fr}.top{position:static}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="bar">
+      <div><h1>Nursing Smart Bank Quiz</h1><div class="sub">Complete corrected bank: MCQ, True/False, Matching, Essay, JSON, PDF.</div></div>
+      <a href="bot_questions.json"><button class="ghost">JSON</button></a>
+      <a href="nursing_smart_bank.pdf"><button class="ghost">PDF</button></a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="controls">
+      <input id="search" placeholder="Search question, option, answer...">
+      <select id="chapter"><option value="">All chapters</option></select>
+      <select id="section"><option value="">All sections</option><option value="mcq">MCQ</option><option value="true_false">True / False</option><option value="matching">Matching</option><option value="essay">Essay</option></select>
+      <select id="filter"><option value="all">All</option><option value="complete">Complete quiz only</option><option value="review">Needs review</option></select>
+    </section>
+    <section class="tabs">
+      <button id="browseTab" class="active">Browse</button>
+      <button id="quizTab">Quiz</button>
+      <button id="matchTab">Matching</button>
+    </section>
+    <section class="stats" id="stats"></section>
+    <section class="grid">
+      <div id="main"></div>
+      <aside class="panel">
+        <div class="q">Question List</div>
+        <div class="muted" id="count"></div>
+        <div class="sideList" id="side"></div>
+      </aside>
+    </section>
+  </main>
+  <script src="data.js"></script>
+  <script>
+    const D=window.BANK_DATA, $=s=>document.querySelector(s);
+    const chapter=$('#chapter'), section=$('#section'), filter=$('#filter'), search=$('#search'), main=$('#main'), side=$('#side');
+    let mode='browse', current=0, picked=null, checked=false;
+    for(const c of D.summary.chapters){const o=document.createElement('option');o.value=c.chapter;o.textContent=`Chapter ${c.chapter} - ${c.title}`;chapter.appendChild(o)}
+    function rows(){
+      const s=search.value.trim().toLowerCase();
+      return D.questions.filter(q=>{
+        if(chapter.value&&String(q.chapter)!==chapter.value)return false;
+        if(section.value&&q.section!==section.value)return false;
+        if(filter.value==='complete'&&q.section==='mcq'&&!q.options)return false;
+        if(filter.value==='review'&&!(q.review_flags||[]).length)return false;
+        if(mode==='quiz'&&!['mcq','true_false'].includes(q.section))return false;
+        if(mode==='match'&&q.section!=='matching')return false;
+        return !s||JSON.stringify(q).toLowerCase().includes(s);
+      });
+    }
+    function answer(q){return q.correct_answer||q.answer||q.answer_text||''}
+    function opts(q){return q.section==='true_false'?{A:'True',B:'False'}:(q.options||{})}
+    function renderStats(rs){
+      const mcq=D.questions.filter(q=>q.section==='mcq').length, matching=D.questions.filter(q=>q.section==='matching').length;
+      $('#stats').innerHTML=`<div class=stat><b>${D.questions.length}</b>Total records</div><div class=stat><b>${mcq}</b>MCQ complete</div><div class=stat><b>${matching}</b>Matching</div><div class=stat><b>${rs.length}</b>Shown</div>`;
+    }
+    function card(q,i){
+      const o=opts(q), a=answer(q);
+      const optHtml=Object.entries(o).map(([k,v])=>`<div class=opt><b>${k}.</b> ${v}</div>`).join('');
+      const flags=(q.review_flags||[]).map(f=>`<span class=tag>${f}</span>`).join('');
+      return `<article class=card><div class=meta><span class=tag>Ch ${q.chapter}</span><span class=tag>${q.section_name||q.section}</span><span class=tag>#${q.number}</span>${flags}</div><div class=q>${q.question||''}</div>${optHtml?`<div class=opts>${optHtml}</div>`:''}<div class=answer>Answer: ${a}</div>${q.explanation?`<div class=muted>${q.explanation}</div>`:''}</article>`;
+    }
+    function renderBrowse(rs){main.innerHTML=rs.map(card).join('')||'<div class=card>No results</div>'}
+    function renderQuiz(rs){
+      if(!rs.length){main.innerHTML='<div class=card>No quiz questions</div>';return}
+      if(current>=rs.length)current=0; const q=rs[current], o=opts(q), a=answer(q);
+      const buttons=Object.entries(o).map(([k,v])=>{
+        let cls='opt'; if(checked&&k===a)cls+=' correct'; if(checked&&picked===k&&picked!==a)cls+=' wrong';
+        return `<button class="${cls}" onclick="pick('${k}')"><b>${k}.</b> ${v}</button>`;
+      }).join('');
+      main.innerHTML=`<article class=card><div class=meta><span class=tag>Ch ${q.chapter}</span><span class=tag>${q.section_name}</span><span class=tag>${current+1}/${rs.length}</span></div><div class=q>${q.question}</div><div class=opts>${buttons}</div>${checked?`<div class=answer>Answer: ${a}</div>`:''}<div class=meta style="margin-top:12px"><button onclick="prev()">Previous</button><button onclick="check()">Check</button><button onclick="next()">Next</button></div></article>`;
+    }
+    function renderMatch(rs){
+      const groups={}; for(const q of rs){(groups[q.chapter_title]??=[]).push(q)}
+      main.innerHTML=Object.entries(groups).map(([name,items])=>`<article class=card><div class=q>${name}</div><div class=match>${items.map(q=>`<div class=matchRow>${q.question}</div>`).join('')}</div></article>`).join('')||'<div class=card>No matching questions</div>';
+    }
+    function renderSide(rs){$('#count').textContent=`${rs.length} records`;side.innerHTML=rs.slice(0,350).map((q,i)=>`<button class="sideItem ${i===current?'active':''}" onclick="jump(${i})">Ch${q.chapter} #${q.number} ${q.section_name||q.section}</button>`).join('')}
+    function render(){const rs=rows();renderStats(rs);renderSide(rs);if(mode==='quiz')renderQuiz(rs);else if(mode==='match')renderMatch(rs);else renderBrowse(rs)}
+    function setMode(m){mode=m;current=0;picked=null;checked=false;for(const id of ['browseTab','quizTab','matchTab'])$('#'+id).classList.remove('active');$('#'+m+'Tab').classList.add('active');render()}
+    function pick(k){picked=k;checked=true;render()} function check(){checked=true;render()} function next(){current++;picked=null;checked=false;render()} function prev(){current=Math.max(0,current-1);picked=null;checked=false;render()} function jump(i){current=i;picked=null;checked=false;render()}
+    $('#browseTab').onclick=()=>setMode('browse');$('#quizTab').onclick=()=>setMode('quiz');$('#matchTab').onclick=()=>setMode('match');
+    chapter.onchange=section.onchange=filter.onchange=search.oninput=()=>{current=0;render()}; render();
+  </script>
+</body>
+</html>
