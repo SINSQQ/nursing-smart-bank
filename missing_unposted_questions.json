@@ -1,0 +1,666 @@
+{
+  "total_missing_unposted": 131,
+  "chapters": {
+    "2": [
+      {
+        "number": 66,
+        "question": "Which antibiotic is commonly used to treat TB?",
+        "section": "mcq"
+      },
+      {
+        "number": 67,
+        "question": "To promote airway clearance in TB, the nurse should encourage:",
+        "section": "mcq"
+      },
+      {
+        "number": 68,
+        "question": "Pyridoxine (Vitamin B6) is given to TB patients to prevent:",
+        "section": "mcq"
+      },
+      {
+        "number": 69,
+        "question": "TB patients are taught to cover their mouth when:",
+        "section": "mcq"
+      },
+      {
+        "number": 70,
+        "question": "Which room type is required for a hospitalised active TB patient?",
+        "section": "mcq"
+      },
+      {
+        "number": 71,
+        "question": "TB can spread through the:",
+        "section": "mcq"
+      },
+      {
+        "number": 72,
+        "question": "A complete TB evaluation includes:",
+        "section": "mcq"
+      },
+      {
+        "number": 73,
+        "question": "TB prevention in children involves:",
+        "section": "mcq"
+      },
+      {
+        "number": 74,
+        "question": "Monitoring weight in TB patients is part of:",
+        "section": "mcq"
+      },
+      {
+        "number": 75,
+        "question": "A complication of TB is involvement of the:",
+        "section": "mcq"
+      },
+      {
+        "number": 76,
+        "question": "COPD is characterised by:",
+        "section": "mcq"
+      },
+      {
+        "number": 77,
+        "question": "A major occupational risk factor for COPD is:",
+        "section": "mcq"
+      },
+      {
+        "number": 78,
+        "question": "Which enzyme inhibitor deficiency causes lung injury in COPD?",
+        "section": "mcq"
+      },
+      {
+        "number": 79,
+        "question": "A physical sign of COPD is:",
+        "section": "mcq"
+      },
+      {
+        "number": 80,
+        "question": "Pursed-lip breathing helps to:",
+        "section": "mcq"
+      },
+      {
+        "number": 81,
+        "question": "Which medication decreases airway inflammation in COPD?",
+        "section": "mcq"
+      },
+      {
+        "number": 82,
+        "question": "Pulmonary rehabilitation involves:",
+        "section": "mcq"
+      },
+      {
+        "number": 83,
+        "question": "To clear secretions in COPD, the nurse uses:",
+        "section": "mcq"
+      },
+      {
+        "number": 84,
+        "question": "Nebulised saline inhalations help to:",
+        "section": "mcq"
+      },
+      {
+        "number": 85,
+        "question": "COPD patients should monitor for tachycardia when taking:",
+        "section": "mcq"
+      },
+      {
+        "number": 86,
+        "question": "A technique to manage fatigue in COPD is:",
+        "section": "mcq"
+      },
+      {
+        "number": 87,
+        "question": "A sign of emphysema is:",
+        "section": "mcq"
+      },
+      {
+        "number": 88,
+        "question": "COPD can lead to which skeletal issue?",
+        "section": "mcq"
+      },
+      {
+        "number": 89,
+        "question": "In COPD, wheezing is heard through a:",
+        "section": "mcq"
+      },
+      {
+        "number": 90,
+        "question": "Depression is a possible ______ of COPD.",
+        "section": "mcq"
+      }
+    ],
+    "3": [
+      {
+        "number": 46,
+        "question": "Which of the following is NOT a location for a peptic ulcer?",
+        "section": "mcq"
+      },
+      {
+        "number": 47,
+        "question": "Gastric ulcers are most common near the:",
+        "section": "mcq"
+      },
+      {
+        "number": 48,
+        "question": "Which bacteria is heavily linked to peptic ulcers?",
+        "section": "mcq"
+      },
+      {
+        "number": 49,
+        "question": "What is the primary cause of duodenal ulcers?",
+        "section": "mcq"
+      },
+      {
+        "number": 50,
+        "question": "Stress ulcers are most common in which parts of the GI tract?",
+        "section": "mcq"
+      },
+      {
+        "number": 51,
+        "question": "Pain that occurs 1–2 hours after a meal is characteristic of:",
+        "section": "mcq"
+      },
+      {
+        "number": 52,
+        "question": "Which ulcer type is often relieved by food?",
+        "section": "mcq"
+      },
+      {
+        "number": 53,
+        "question": "Haematemesis is more likely to occur with which type of ulcer?",
+        "section": "mcq"
+      },
+      {
+        "number": 54,
+        "question": "Melaena refers to:",
+        "section": "mcq"
+      },
+      {
+        "number": 55,
+        "question": "The procedure used to visualise the esophagus, stomach, and duodenum directly is:",
+        "section": "mcq"
+      },
+      {
+        "number": 56,
+        "question": "Following an Upper GI series, why is a mild laxative sometimes recommended?",
+        "section": "mcq"
+      },
+      {
+        "number": 57,
+        "question": "A \"coffee ground\" appearance of vomitus indicates:",
+        "section": "mcq"
+      },
+      {
+        "number": 58,
+        "question": "Signs of orthostatic hypotension during haemorrhage include:",
+        "section": "mcq"
+      },
+      {
+        "number": 59,
+        "question": "Management of haemorrhage includes all the following EXCEPT:",
+        "section": "mcq"
+      },
+      {
+        "number": 60,
+        "question": "Perforation leads to the emptying of GI contents into the:",
+        "section": "mcq"
+      },
+      {
+        "number": 61,
+        "question": "A patient with a \"rigid, board-like\" abdomen likely has:",
+        "section": "mcq"
+      },
+      {
+        "number": 62,
+        "question": "Which is a medical emergency requiring urgent surgery?",
+        "section": "mcq"
+      },
+      {
+        "number": 63,
+        "question": "Pyloric obstruction is caused by:",
+        "section": "mcq"
+      },
+      {
+        "number": 64,
+        "question": "Metabolic alkalosis in pyloric obstruction is caused by:",
+        "section": "mcq"
+      },
+      {
+        "number": 65,
+        "question": "Conservative therapy for ulcers includes:",
+        "section": "mcq"
+      },
+      {
+        "number": 66,
+        "question": "The primary goal of using antibiotics in ulcer treatment is:",
+        "section": "mcq"
+      },
+      {
+        "number": 67,
+        "question": "Initial drugs of choice for medical management are:",
+        "section": "mcq"
+      },
+      {
+        "number": 68,
+        "question": "Which medication type stops cholinergic stimulation of HCl?",
+        "section": "mcq"
+      },
+      {
+        "number": 69,
+        "question": "Gastroduodenostomy connects the remaining stomach to the:",
+        "section": "mcq"
+      },
+      {
+        "number": 70,
+        "question": "Subtotal gastrectomy removes how much of the stomach?",
+        "section": "mcq"
+      },
+      {
+        "number": 71,
+        "question": "Which surgical procedure connects the esophagus to the jejunum?",
+        "section": "mcq"
+      },
+      {
+        "number": 72,
+        "question": "\"Back diffusion\" refers to HCl damaging the:",
+        "section": "mcq"
+      },
+      {
+        "number": 73,
+        "question": "Protein-rich meals contribute to duodenal ulcers because they:",
+        "section": "mcq"
+      },
+      {
+        "number": 74,
+        "question": "Which ulcer type is most associated with rapid emptying of food?",
+        "section": "mcq"
+      },
+      {
+        "number": 75,
+        "question": "Ischaemia is a major factor in:",
+        "section": "mcq"
+      },
+      {
+        "number": 76,
+        "question": "In an Upper GI series, the patient ingests:",
+        "section": "mcq"
+      },
+      {
+        "number": 77,
+        "question": "Clinical manifestations of haemorrhage include:",
+        "section": "mcq"
+      },
+      {
+        "number": 78,
+        "question": "The purpose of NGT suction in haemorrhage is to:",
+        "section": "mcq"
+      },
+      {
+        "number": 79,
+        "question": "Perforation pain can spread to:",
+        "section": "mcq"
+      },
+      {
+        "number": 80,
+        "question": "Which is NOT a management step for perforation?",
+        "section": "mcq"
+      },
+      {
+        "number": 81,
+        "question": "Pyloric obstruction is a symptom of:",
+        "section": "mcq"
+      },
+      {
+        "number": 82,
+        "question": "Abdominal bloating is a symptom of:",
+        "section": "mcq"
+      },
+      {
+        "number": 83,
+        "question": "Histamine H2 receptor antagonists work by:",
+        "section": "mcq"
+      },
+      {
+        "number": 84,
+        "question": "Gastrojejunostomy is also known as a procedure that reconnects the:",
+        "section": "mcq"
+      },
+      {
+        "number": 85,
+        "question": "Dietary modifications are part of:",
+        "section": "mcq"
+      },
+      {
+        "number": 86,
+        "question": "The recurrence rate of ulcers with H. pylori Rx is:",
+        "section": "mcq"
+      },
+      {
+        "number": 87,
+        "question": "Total gastrectomy is the:",
+        "section": "mcq"
+      },
+      {
+        "number": 88,
+        "question": "Management of haemorrhage requires replacing:",
+        "section": "mcq"
+      },
+      {
+        "number": 89,
+        "question": "Bright red haematemesis is more likely in:",
+        "section": "mcq"
+      },
+      {
+        "number": 90,
+        "question": "Peptic ulcers are essentially:",
+        "section": "mcq"
+      }
+    ],
+    "4": [
+      {
+        "number": 32,
+        "question": "Which of the following is a precipitating factor for angina?",
+        "section": "mcq"
+      },
+      {
+        "number": 33,
+        "question": "The type of angina that occurs with recumbent position and is relieved by sitting is:",
+        "section": "mcq"
+      },
+      {
+        "number": 34,
+        "question": "Which type of angina is described as preinfarction angina?",
+        "section": "mcq"
+      },
+      {
+        "number": 35,
+        "question": "During an acute angina attack, the nurse would expect the patient's heart rhythm to be:",
+        "section": "mcq"
+      },
+      {
+        "number": 36,
+        "question": "Which diagnostic test typically shows NORMAL results in a patient with stable angina?",
+        "section": "mcq"
+      },
+      {
+        "number": 37,
+        "question": "The pharmacological treatment of angina includes all of the following EXCEPT:",
+        "section": "mcq"
+      },
+      {
+        "number": 38,
+        "question": "The surgical revascularisation procedure for angina is:",
+        "section": "mcq"
+      },
+      {
+        "number": 39,
+        "question": "Which of the following is the FIRST action when a patient experiences angina chest pain?",
+        "section": "mcq"
+      },
+      {
+        "number": 40,
+        "question": "Nitroglycerin tablets must be stored in:",
+        "section": "mcq"
+      },
+      {
+        "number": 41,
+        "question": "If angina pain persists after the first nitroglycerin tablet, the patient should:",
+        "section": "mcq"
+      },
+      {
+        "number": 42,
+        "question": "Common side effects of nitroglycerin include all of the following EXCEPT:",
+        "section": "mcq"
+      },
+      {
+        "number": 43,
+        "question": "Patients with angina are advised to avoid physical exercise for how long after meals?",
+        "section": "mcq"
+      },
+      {
+        "number": 44,
+        "question": "Which dietary recommendation is appropriate for a patient with angina?",
+        "section": "mcq"
+      },
+      {
+        "number": 45,
+        "question": "A patient with angina is going outside in cold weather. Which advice is MOST appropriate?",
+        "section": "mcq"
+      },
+      {
+        "number": 46,
+        "question": "Acute Myocardial Infarction (MI) is caused by:",
+        "section": "mcq"
+      },
+      {
+        "number": 47,
+        "question": "Which of the following is NOT one of the six primary risk factors for MI?",
+        "section": "mcq"
+      },
+      {
+        "number": 48,
+        "question": "Which ECG changes are associated with acute MI?",
+        "section": "mcq"
+      },
+      {
+        "number": 49,
+        "question": "Which laboratory finding is expected in acute MI?",
+        "section": "mcq"
+      },
+      {
+        "number": 50,
+        "question": "The initial emergency ECG in a suspected MI patient should be performed within:",
+        "section": "mcq"
+      },
+      {
+        "number": 51,
+        "question": "Sublingual nitroglycerin is CONTRAINDICATED in MI when systolic blood pressure is:",
+        "section": "mcq"
+      },
+      {
+        "number": 52,
+        "question": "Which analgesic is mentioned as part of the initial emergency management of acute MI?",
+        "section": "mcq"
+      },
+      {
+        "number": 53,
+        "question": "The dose of aspirin recommended in the initial management of acute MI is:",
+        "section": "mcq"
+      },
+      {
+        "number": 54,
+        "question": "Which of the following is a clinical manifestation of acute MI?",
+        "section": "mcq"
+      },
+      {
+        "number": 55,
+        "question": "Syncope in the context of acute MI is described as:",
+        "section": "mcq"
+      },
+      {
+        "number": 56,
+        "question": "One of the main goals of cardiac rehabilitation is:",
+        "section": "mcq"
+      },
+      {
+        "number": 57,
+        "question": "How many sub-goals of rehabilitation are specifically listed in the lecture?",
+        "section": "mcq"
+      },
+      {
+        "number": 58,
+        "question": "Which nursing diagnosis is appropriate for a patient experiencing chest pain due to myocardial ischaemia?",
+        "section": "mcq"
+      },
+      {
+        "number": 59,
+        "question": "The nursing intervention of health teaching for angina patients should include:",
+        "section": "mcq"
+      },
+      {
+        "number": 60,
+        "question": "Which of the following is an objective indicator of angina?",
+        "section": "mcq"
+      },
+      {
+        "number": 61,
+        "question": "The psychosocial nursing diagnosis for angina patients commonly includes:",
+        "section": "mcq"
+      },
+      {
+        "number": 62,
+        "question": "A patient with angina reports pain only at night. This is best classified as:",
+        "section": "mcq"
+      },
+      {
+        "number": 63,
+        "question": "Which dietary substance should be restricted in angina patients because it increases heart rate?",
+        "section": "mcq"
+      },
+      {
+        "number": 64,
+        "question": "During a nursing assessment for angina, which question is MOST important to ask?",
+        "section": "mcq"
+      },
+      {
+        "number": 65,
+        "question": "The nitroglycerin tablet for angina should be placed:",
+        "section": "mcq"
+      },
+      {
+        "number": 66,
+        "question": "ECG changes during an acute angina attack may show:",
+        "section": "mcq"
+      },
+      {
+        "number": 67,
+        "question": "Which of the following best describes the pain of angina?",
+        "section": "mcq"
+      },
+      {
+        "number": 68,
+        "question": "Coronary angiography is used to:",
+        "section": "mcq"
+      },
+      {
+        "number": 69,
+        "question": "A patient with angina should be taught to:",
+        "section": "mcq"
+      },
+      {
+        "number": 70,
+        "question": "Which of the following is the correct statement about nitroglycerin prophylactic use?",
+        "section": "mcq"
+      },
+      {
+        "number": 71,
+        "question": "Which of the following is a risk factor for angina listed in the lecture?",
+        "section": "mcq"
+      },
+      {
+        "number": 72,
+        "question": "Which of the following is a risk factor for angina listed in the lecture?",
+        "section": "mcq"
+      },
+      {
+        "number": 73,
+        "question": "Which statement about Type A personality and angina is correct?",
+        "section": "mcq"
+      },
+      {
+        "number": 74,
+        "question": "The patient teaching about Type A personality in angina should emphasise:",
+        "section": "mcq"
+      },
+      {
+        "number": 75,
+        "question": "A complication of TB is involvement of the:",
+        "section": "mcq"
+      },
+      {
+        "number": 76,
+        "question": "In CRF management, which associated diseases must be controlled first?",
+        "section": "mcq"
+      },
+      {
+        "number": 77,
+        "question": "Which imaging technique is mentioned as a diagnostic test for acute MI?",
+        "section": "mcq"
+      },
+      {
+        "number": 78,
+        "question": "Beta blockers are used in angina management because they:",
+        "section": "mcq"
+      },
+      {
+        "number": 79,
+        "question": "Which test is used to evaluate cardiac function under physical stress?",
+        "section": "mcq"
+      },
+      {
+        "number": 80,
+        "question": "Which of the following statements about obesity and angina is correct?",
+        "section": "mcq"
+      },
+      {
+        "number": 81,
+        "question": "Which of the following statements about obesity and angina is correct?",
+        "section": "mcq"
+      },
+      {
+        "number": 82,
+        "question": "What is the goal of reducing anxiety in a patient with angina?",
+        "section": "mcq"
+      },
+      {
+        "number": 83,
+        "question": "The primary nursing assessment question to the nurse is the one listed in the lecture?",
+        "section": "mcq"
+      },
+      {
+        "number": 84,
+        "question": "Psychosocial factors in cardiac rehabilitation include:",
+        "section": "mcq"
+      },
+      {
+        "number": 85,
+        "question": "Risk factor modification for angina includes all of the following EXCEPT:",
+        "section": "mcq"
+      },
+      {
+        "number": 86,
+        "question": "In acute MI management, oxygen is administered via:",
+        "section": "mcq"
+      },
+      {
+        "number": 87,
+        "question": "Which of the following is a clinical manifestation of angina that represents the MOST severe form?",
+        "section": "mcq"
+      },
+      {
+        "number": 88,
+        "question": "The term 'preinfarction angina' refers to:",
+        "section": "mcq"
+      },
+      {
+        "number": 89,
+        "question": "Which of the following conditions is associated with an increased risk of UTI due to urinary stasis?",
+        "section": "mcq"
+      },
+      {
+        "number": 90,
+        "question": "Which of the following is the correct statement about nitroglycerin prophylactic use?",
+        "section": "mcq"
+      },
+      {
+        "number": 91,
+        "question": "Which of the following is the MOST appropriate advice for a patient regarding smoking?",
+        "section": "mcq"
+      },
+      {
+        "number": 92,
+        "question": "Which of the following correctly describes pressure in the lower pelvis as a symptom?",
+        "section": "mcq"
+      }
+    ]
+  }
+}
