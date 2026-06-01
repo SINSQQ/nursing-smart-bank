@@ -12,26 +12,13 @@
 <main class="wrap"><div id="app"></div></main>
 <script>
 const QUESTIONS=[
- {q:'Nutrition is best defined as:',o:['The process of food digestion only','The process by which the body takes in and uses food','A diet used only for weight loss','The elimination of waste products'],a:1},
- {q:'Carbohydrates are mainly used by the body for:',o:['Building antibodies','Providing energy','Blood clotting','Transporting oxygen'],a:1},
- {q:'Proteins are most important for:',o:['Tissue growth and repair','Immediate energy only','Preventing dehydration','Increasing body temperature'],a:0},
- {q:'Fats are important because they:',o:['Provide concentrated energy','Have no role in the body','Destroy vitamins','Replace water needs'],a:0},
- {q:'Which vitamin is fat-soluble?',o:['Vitamin C','Vitamin B1','Vitamin A','Vitamin B12'],a:2},
- {q:'Which mineral is essential for hemoglobin formation?',o:['Iron','Calcium','Sodium','Iodine'],a:0},
- {q:'Calcium is mainly needed for:',o:['Bone and teeth health','Oxygen transport','Wound infection','Urine formation'],a:0},
- {q:'A balanced diet should include:',o:['Only protein foods','Only fruits and vegetables','Different food groups in proper amounts','Only low-calorie foods'],a:2},
- {q:'The best indicator for adult weight status is commonly:',o:['Temperature','Body mass index','Pulse rate','Respiratory rate'],a:1},
- {q:'Malnutrition means:',o:['Good nutritional status','Deficiency, excess, or imbalance of nutrients','Drinking enough water','Eating three meals only'],a:1},
- {q:'A patient with poor wound healing needs more:',o:['Protein','Simple sugar','Caffeine','Salt'],a:0},
- {q:'Dehydration means:',o:['Excess body water','Loss or lack of body fluids','High protein intake','Increased body fat'],a:1},
- {q:'Fiber in the diet helps to:',o:['Prevent constipation','Cause anemia','Reduce bone density','Stop digestion'],a:0},
- {q:'Which food is a good source of protein?',o:['Chicken','Sugar','Tea','Plain water'],a:0},
- {q:'Which food is rich in carbohydrates?',o:['Rice','Fish','Egg','Cheese'],a:0},
- {q:'A low-sodium diet is commonly used for patients with:',o:['Hypertension','Hypoglycemia only','Vitamin C deficiency','Fracture only'],a:0},
- {q:'For diabetic patients, nutrition education should focus on:',o:['Skipping all meals','Controlling carbohydrate intake','Eating unlimited sweets','Avoiding all protein'],a:1},
- {q:'Which drink is best for preventing dehydration?',o:['Water','Strong coffee only','Energy drink only','Alcohol'],a:0},
- {q:'Before feeding a patient, the nurse should first assess:',o:['Ability to swallow','Shoe size','Hair color','Room number'],a:0},
- {q:'Enteral nutrition is given through:',o:['The digestive tract','The skin only','The urinary tract','The lungs'],a:0}
+ {q:'GO foods:',o:['Called bodybuilding foods','Called energy-giving foods','Protective foods','Vitamin K + vitamin C'],a:1},
+ {q:'Keep sodium (salt) daily intake:',o:['4000 mg','Under 2400 mg','Over 3000 mg','Over 4400 mg'],a:1},
+ {q:'Patient with liver cirrhosis should receive:',o:['25-30 kcal/kg per day','15-20 kcal/kg per day','25-28 kcal/kg per day','35-40 kcal/kg per day'],a:3},
+ {q:'Foods indicated during fever:',o:['Energy increased by 50% - protein diet supplying 1.25-1.5 g protein/kg','Energy increased by 30% - protein diet supplying 2 g protein/kg','Energy decreased by 20% - protein diet supplying 1 g protein/kg','Energy decreased by 40% - protein diet supplying 0.5 g protein/kg'],a:0},
+ {q:'The BRAT diet stands for:',o:['Pasta, rice, toast','Apple, pasta and toast','Toast, watermelon and water','Banana, Rice, Applesauce, and Toast'],a:3},
+ {q:'Foods indicated during fever:',o:['Energy increased by 50%','Energy increased by 30%','Energy decreased by 20%','Energy decreased by 10%'],a:0},
+ {q:'Foods that boost the immune system:',o:['Fried foods','Processed foods','Kiwi and Garlic','Soda'],a:2}
 ];
 let current=0,answers={};
 const app=document.getElementById('app');
@@ -39,7 +26,7 @@ function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 let bank=shuffle(QUESTIONS);
 function score(){return Object.values(answers).filter(x=>x.correct).length}
-function home(){current=0;answers={};bank=shuffle(QUESTIONS);app.innerHTML=`<section class="card home"><h1>Nutrition Quiz</h1><p class="muted">20 nutrition questions - 4 answers each.</p><button class="btn primary" onclick="render()">Start quiz</button></section>`}
+function home(){current=0;answers={};bank=shuffle(QUESTIONS);app.innerHTML=`<section class="card home"><h1>Nutrition Quiz</h1><p class="muted">${QUESTIONS.length} nutrition questions from the uploaded sheet - 4 answers each.</p><button class="btn primary" onclick="render()">Start quiz</button></section>`}
 function render(){const q=bank[current];if(!q){finish();return}const ans=answers[current];const done=Object.keys(answers).length;app.innerHTML=`<section class="card"><div class="row"><div><div class="title">Nutrition Quiz</div><div class="muted">Question ${current+1} of ${bank.length}</div></div><div class="muted">Score ${score()} / ${done}</div></div><div class="bar"><div class="fill" style="width:${Math.round(done/bank.length*100)}%"></div></div><div class="q">${esc(q.q)}</div><div class="opts">${q.o.map((o,i)=>option(q,i,ans)).join('')}</div>${ans?feedback(q,ans):''}<div class="nav"><button class="btn" onclick="prev()" ${current===0?'disabled':''}>Previous</button><button class="btn" onclick="home()">Home</button><button class="btn primary" onclick="next()" ${ans?'':'disabled'}>Next</button></div></section>`}
 function option(q,i,ans){let cls='opt';if(ans&&i===q.a)cls+=' correct';if(ans&&ans.choice===i&&i!==q.a)cls+=' wrong';return `<button class="${cls}" onclick="choose(${i})" ${ans?'disabled':''}><b>${String.fromCharCode(65+i)}.</b> ${esc(q.o[i])}</button>`}
 function choose(i){const q=bank[current];answers[current]={choice:i,correct:i===q.a};render()}
