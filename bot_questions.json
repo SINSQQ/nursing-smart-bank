@@ -5511,7 +5511,8 @@
       "options": {
         "A": "Irreversible necrosis of the myocardium",
         "B": "A clinical syndrome characterised by paroxysmal chest pain or pressure",
-        "C": "Inflammation of the pericardium"
+        "C": "Inflammation of the pericardium",
+        "D": "Reduced blood flow to the brain"
       },
       "correct_answer": "B",
       "explanation": "paroxysmal ischemic chest pain",
