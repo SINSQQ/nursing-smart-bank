@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pharmacology Quiz</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f7f8fb;color:#20232a}.wrap{max-width:860px;margin:0 auto;padding:16px}.card{background:#fff;border:1px solid #d9deea;border-radius:8px;padding:16px}.home{text-align:center;padding:34px 16px}.home h1{margin:0 0 8px;color:#244c85;font-size:26px}.q{font-size:18px;line-height:1.5;margin:12px 0}.opts{display:grid;gap:8px}.opt{border:1px solid #cbd3df;border-radius:8px;background:#fff;padding:12px;text-align:left;cursor:pointer;line-height:1.45;font:inherit}.opt:hover{background:#f4f7fb;border-color:#244c85}.opt.correct{background:#e9f6f1;border-color:#147a5c;color:#0b5b43}.opt.wrong{background:#fff0f0;border-color:#b32d2e;color:#8a2020}.btn{border:1px solid #cbd3df;border-radius:6px;background:#fff;padding:10px 14px;cursor:pointer;font:inherit;text-decoration:none;color:#20232a;display:inline-block;margin:4px}.btn.primary{background:#244c85;border-color:#244c85;color:#fff}.row{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.title{font-weight:700;color:#244c85}
+  </style>
+</head>
+<body>
+<main class="wrap"><div id="app"></div></main>
+<script>
+const QUESTIONS = [
+  {"question":"During attack of angina the best drug taken is:","options":["Oral nitrates","Sublingual nitrates","Oral propranolol","Oral aspirin"],"answer":1},
+  {"question":"Which of the following is antihypertensive drug that inhibit ACE:","options":["Propranolol","Nefidipine","Captopril","Losartan"],"answer":2},
+  {"question":"Which of the following drugs increase myocardial contractility and used in heart failure:","options":["Digoxin","Frusemide","Propranolol","Captopril"],"answer":0},
+  {"question":"Which of the following used to treat bronchial asthma by blocking M3 receptors:","options":["Theophylline","Salmeterol","Ipratropium","Ketotifen"],"answer":2},
+  {"question":"The best analgesic in patient with myocardial infarction:","options":["Aspirin","Ibuprofen","Morphine","Paracetamol"],"answer":2},
+  {"question":"Propranolol used in:","options":["Hypertension","Heart failure","Pulmonary edema","All of the above"],"answer":0},
+  {"question":"The 1st line in treating diarrhea is:","options":["Antibiotics","Fluid replacement","Cortisone","Aspirin"],"answer":1},
+  {"question":"Which of the following is antihypertensive drug that block alpha receptors:","options":["Captopril","Nefidipine","Perazosin","Verapamil"],"answer":2},
+  {"question":"Which of the following is ca channel blocker:","options":["Verapamil","Propranolol","Perazosin","Ramipril"],"answer":0},
+  {"question":"Pharmacokinetics does not include:","options":["Absorption","Mechanism of drug action","Distribution","Metabolism"],"answer":1},
+  {"question":"Which of the following is parasympatholytic drug:","options":["morphine","adrenaline","atropine","perazosin"],"answer":2},
+  {"question":"The mechanism by which propranolol act:","options":["block beta receptors","block alpha receptors","Inhibit DNA","Inhibit folic acid synthesis"],"answer":0},
+  {"question":"Vasodilators used in:","options":["Hypertension","odema","All of the above","Non of the above"],"answer":0},
+  {"question":"The best route of aminophylline in acute severe asthma:","options":["Inhalation","Rectal","Intravenous infusion","Oral"],"answer":2},
+  {"question":"The most serious complication of adrenaline:","options":["Hypersensitivity","hypertension","arrysthmias","Lipodystrophy"],"answer":2},
+  {"question":"The best type of contraception in lactation:","options":["Combined pills","Estrogen containg pills","Progesterone containg pills","Non of the above"],"answer":2},
+  {"question":"Which of the following is disadvantage of rectal route:","options":["Rapid onset","No 1st pass metabolism","Irregular absorption","Suitable for comatozed"],"answer":2},
+  {"question":"Drugs with Vd 30 L:","options":["Present in plasma only","Dialysis is useless","Tight bound to plasma proteins","Don't need monitoring"],"answer":1},
+  {"question":"The best treatment of hypertension in pregnancy is:","options":["Thiazides","ACEIS","ARBS","Alpha methyl dopa"],"answer":3},
+  {"question":"Nitrates act by:","options":["Block beta receptors","Increase sodium excretion","Increase NO synthesis","Stimulate alpha receptors"],"answer":2},
+  {"question":"Side effects of atropine doesn't include:","options":["Dry mouth","Urine retention","Increased heart rate","Diarrhea"],"answer":3},
+  {"question":"Which sympatholytic used in prostatic enlargement:","options":["propranolol","perazosin","adrenaline","Glargine"],"answer":1},
+  {"question":"Which of the following isn't use of corticosteroids:","options":["Osteoporosis","Prevent organ rejection","Maturation of fetal lung","Addison disease"],"answer":0},
+  {"question":"The effect of sympathomimetics on bronchial system include:","options":["bronchospasm","increase airway secretions","bronchodilatation","Non of the above"],"answer":2},
+  {"question":"Propranolol used in the following diseases except:","options":["hypertension","tachycardia","bronchial asthma","thyrotoxicosis"],"answer":2},
+  {"question":"Contraindication of adrenaline include:","options":["cardiac arrest","acute severe asthma","local anaesthetics","thyrotoxicosis"],"answer":3},
+  {"question":"Which of the following suitable in coma:","options":["oral","intravenous","subcutaneous","inhalation"],"answer":1},
+  {"question":"The syrup contain drug which:","options":["water insoluble","lipid soluble","water soluble","must be shaked before use"],"answer":2},
+  {"question":"Which of the following best describe suppressive treatment:","options":["prevent occurance of disease","support immunity in patient","prevent appearance of clinical picture","increase the deficient elements"],"answer":2},
+  {"question":"Disadvantages of oral route:","options":["low 1st pass metabolism","need sterilization","low bioavailability","self use"],"answer":2},
+  {"question":"In contrast to adrenaline methacholine produce:","options":["bronchodilation","tachycardia","urine retention","miosis"],"answer":3},
+  {"question":"Substance used to stop bleeding from injured vessels:","options":["astringents","emollients","demulcent","irritant"],"answer":0},
+  {"question":"Gastric lavage means:","options":["stomach wash","stomach feeding","stomach resection","all of the above"],"answer":0},
+  {"question":"Tablets include:","options":["sublingual","swallowed","chewable","all of the above"],"answer":3},
+  {"question":"Capsules:","options":["hard gelatin","soft gelatin","enteric coated","all of above"],"answer":3},
+  {"question":"Pharmacology deals with:","options":["drugs","toxins","both","neither"],"answer":2},
+  {"question":"Which of the following is indication of morphine:","options":["analgesic","hypertension","hyperthermia","vomiting"],"answer":0},
+  {"question":"Which of the following is side effect of cortisone:","options":["increased blood glucose","increased blood pressure","osteoporosis","all of the above"],"answer":3},
+  {"question":"All of the following are antihypertensive drugs except:","options":["beta blockers","alpha blockers","nitrates","captopril"],"answer":2},
+  {"question":"Which of the following is used in heart failure:","options":["morphine","cortisone","aspirin","digitalis"],"answer":3},
+  {"question":"Which of the following is indication of atropine:","options":["preanaesthetic","heart failure","hypertension","ischemia"],"answer":0},
+  {"question":"Which of the following is indication of perazosin:","options":["hypertension","prostatic enlargement","all","none"],"answer":2},
+  {"question":"Which of the following is indication of corticosteroids:","options":["hypertension","diabetes","anti inflammatory","osteoporosis"],"answer":2},
+  {"question":"Adrenaline is the drug of choice in treating:","options":["anaphylactic shock","septic shock","neurogenic shock","hypovolemic shock"],"answer":0},
+  {"question":"Atropine side effect includes:","options":["blurred vision","dry mouth","urine retention","all of the above"],"answer":3},
+  {"question":"Which of the following drugs used to treat traumatic epistaxis:","options":["perazosin","adrenaline","atropine","phenylephrine"],"answer":1},
+  {"question":"Adrenaline is added to local anesthesia because:","options":["decrease side effects of local anaesthesia","increase elimination of local anaesthesia","increase duration of action of local anaesthesia","non of the above"],"answer":2},
+  {"question":"Atropine is added to preanaesthetic medications because:","options":["decrease all body secretions","inhibit respiratory center","increase heart rate","increase urine volume"],"answer":0},
+  {"question":"Which of the following drugs is preferred in treating hypertension with prostatic enlargement?","options":["adrenaline","propranolol","atropine","perazosin"],"answer":3},
+  {"question":"Which of the following is anticoagulant both in vivo and in vitro:","options":["warfarin","heparin","aspirin small dose","clopidogrel"],"answer":1},
+  {"question":"Which of the following is the most dangerous complication of insulin:","options":["hypoglycemia","allergy","lipodystrophy","hypokalemia"],"answer":0},
+  {"question":"All of the following are phase 1 metabolism except:","options":["oxidation","hydrolysis","reduction","glucuronidation"],"answer":3},
+  {"question":"The amount of drug reaching systemic circulation is called:","options":["first pass metabolism","drug distribution","bioavailability","drug half life"],"answer":2},
+  {"question":"The amount of drug reaching the liver after oral administration is called:","options":["first pass metabolism","drug distribution","bioavailability","drug half life"],"answer":0},
+  {"question":"Which of the following drugs produce flushing:","options":["digitalis","propranolol","phenylephrine","nitroglycerine"],"answer":3},
+  {"question":"Drug X its pka 3.5 the common site of absorption is:","options":["stomach","intestine","both","neither"],"answer":0},
+  {"question":"Corticosteroids are contraindicated in:","options":["bronchial asthma","peptic ulcer","rheumatic fever","inflammatory diseases of the colon"],"answer":1},
+  {"question":"Cough is associated with the use of:","options":["atropine","salbutamol","perazosin","captopril"],"answer":3}
+];
+let current=0,bank=[];const app=document.getElementById('app');
+function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+function home(){app.innerHTML=`<section class="card home"><h1>Pharmacology Quiz</h1><button class="btn primary" onclick="start()">Start Quiz</button></section>`}
+function start(){bank=shuffle(QUESTIONS);current=0;render()}
+function render(){const q=bank[current];app.innerHTML=`<section class="card"><div class="title">Question ${current+1} of ${bank.length}</div><div class="q">${q.question}</div><div class="opts">${q.options.map((o,i)=>`<div class="opt" onclick="check(${i},this)">${o}</div>`).join('')}</div></section>`}
+function check(idx, el){const q=bank[current];if(idx===q.answer){el.classList.add('correct');}else{el.classList.add('wrong');el.parentElement.children[q.answer].classList.add('correct');}Array.from(el.parentElement.children).forEach(c=>c.style.pointerEvents='none');setTimeout(()=>{current++;current<bank.length?render():finish()},1000)}
+function finish(){app.innerHTML=`<section class="card score"><h1>Finished!</h1><button class="btn primary" onclick="home()">Back to Home</button></section>`}
+home();
+</script>
+</body>
+</html>
