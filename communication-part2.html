@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Communication Quiz - Part 2</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,sans-serif;background:#f7f8fb;color:#20232a}
+    .wrap{max-width:860px;margin:0 auto;padding:16px}
+    .card{background:#fff;border:1px solid #d9deea;border-radius:8px;padding:16px}
+    .home{text-align:center;padding:34px 16px}
+    .home h1{margin:0 0 8px;color:#244c85;font-size:26px}
+    .muted{color:#5f6876;font-size:14px}
+    .row{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px}
+    .title{font-weight:700;color:#244c85}
+    .bar{height:7px;background:#e7ebf1;border-radius:999px;overflow:hidden;margin:12px 0}
+    .fill{height:100%;background:#147a5c;transition:width .3s}
+    .q{font-size:18px;line-height:1.5;margin:12px 0}
+    .meta{font-size:12px;color:#5f6876;margin-bottom:10px}
+    .opts{display:grid;gap:8px}
+    .opt{border:1px solid #cbd3df;border-radius:8px;background:#fff;padding:12px;text-align:left;cursor:pointer;line-height:1.45;font:inherit}
+    .opt:hover{background:#f4f7fb;border-color:#244c85}
+    .opt.correct{background:#e9f6f1;border-color:#147a5c;color:#0b5b43}
+    .opt.wrong{background:#fff0f0;border-color:#b32d2e;color:#8a2020}
+    .btn{border:1px solid #cbd3df;border-radius:6px;background:#fff;padding:10px 14px;cursor:pointer;font:inherit;text-decoration:none;color:#20232a;display:inline-block;margin:4px}
+    .btn.primary{background:#244c85;border-color:#244c85;color:#fff}
+    .btn.green{background:#147a5c;border-color:#147a5c;color:#fff}
+    .score{text-align:center;padding:34px 16px}
+    .score-big{font-size:44px;font-weight:700;color:#147a5c;margin:8px 0}
+    .review{display:grid;gap:10px;margin-top:16px;text-align:left}
+    .review-item{border:1px solid #d9deea;border-radius:8px;padding:12px;line-height:1.45}
+    .review-item.was-wrong{border-left:4px solid #b32d2e}
+    .top-links{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+    @media(max-width:640px){.row{flex-direction:column;align-items:flex-start}.btn{width:100%}}
+  </style>
+</head>
+<body>
+<main class="wrap"><div id="app"></div></main>
+<script src="communication-part2-data.js"></script>
+<script>
+const RAW = window.COMM_PART2 || { multiple_choice_questions: [], true_false_questions: [] };
+const QUESTIONS = [
+  ...RAW.multiple_choice_questions.map((q) => ({
+    question: q.question,
+    options: ["A", "B", "C", "D"].map((k) => q.options[k]),
+    answer: "ABCD".indexOf(q.correct_answer),
+    section: "Multiple Choice",
+    id: q.id
+  })),
+  ...RAW.true_false_questions.map((q) => ({
+    question: q.statement,
+    options: ["True", "False"],
+    answer: q.correct_answer ? 0 : 1,
+    section: "True / False",
+    id: q.id
+  }))
+];
+let current=0,answers={},bank=[],originalBank=[];const app=document.getElementById('app');
+function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function score(){return Object.values(answers).filter(x=>x.correct).length}
+function wrongCount(){return Object.values(answers).filter(x=>!x.correct).length}
+function home(){current=0;answers={};app.innerHTML=`<section class="card home"><h1>🩺 Communication Quiz Part 2</h1><p class="muted">${RAW.multiple_choice_questions.length} MCQ + ${RAW.true_false_questions.length} True/False</p><button class="btn primary" onclick="start(20)">20 questions</button><button class="btn primary" onclick="start(50)">50 questions</button><button class="btn primary" onclick="start('all')">All questions (${QUESTIONS.length})</button><div class="top-links"><a class="btn" href="communication-quiz.html">Part 1</a><a class="btn" href="index.html">Home</a></div></section>`}
+function start(count,questions){current=0;answers={};const pool=shuffle(questions||QUESTIONS);bank=count==='all'?pool:pool.slice(0,Math.min(Number(count),pool.length));originalBank=[...bank];render()}
+function render(){const q=bank[current];const ans=answers[current];const done=Object.keys(answers).length;app.innerHTML=`<section class="card"><div class="row"><div><div class="title">🩺 Communication Quiz Part 2</div><div class="muted">Question ${current+1} of ${bank.length}</div></div><div class="muted">Score ${score()} / ${done}</div></div><div class="bar"><div class="fill" style="width:${Math.round(done/bank.length*100)}%"></div></div><div class="meta">#${q.id} · ${esc(q.section)}</div><div class="q">${esc(q.question)}</div><div class="opts">${q.options.map((o,i)=>`<div class="opt${ans?(ans.idx===i?(ans.correct?' correct':' wrong'):(i===q.answer?' correct':'')):''}" onclick="check(${i})">${esc(String.fromCharCode(65+i)+'. '+o)}</div>`).join('')}</div>${ans?`<div style="margin-top:12px">${ans.correct?'✅ Correct!':'❌ Wrong. Correct answer highlighted.'}</div>`:''}</section><div style="display:flex;gap:8px;margin-top:12px;justify-content:space-between;flex-wrap:wrap"><button class="btn" onclick="home()">🏠 Home</button><div style="display:flex;gap:6px;flex-wrap:wrap">${current>0?`<button class="btn" onclick="back()">← Back</button>`:''}${current<bank.length-1&&ans?`<button class="btn primary" onclick="next()">Next →</button>`:''}${current===bank.length-1&&ans?`<button class="btn green" onclick="finish()">Finish ✓</button>`:''}</div></div>`}
+function check(idx){if(answers[current])return;answers[current]={idx,correct:idx===bank[current].answer};render()}
+function back(){if(current>0){current--;render()}}
+function next(){if(current<bank.length-1){current++;render()}}
+function finish(){const s=score(),t=Object.keys(answers).length,wrong=wrongCount();const wrongQs=[];for(let i=0;i<bank.length;i++){const a=answers[i];if(a&&!a.correct)wrongQs.push({i,q:bank[i],a})}let reviewHtml='';if(wrongQs.length>0){reviewHtml=`<div class="review"><h3 style="color:#b32d2e">❌ Wrong Answers (${wrongQs.length})</h3>${wrongQs.map(w=>`<div class="review-item was-wrong"><strong>Q${w.i+1}:</strong> ${esc(w.q.question)}<br><span style="color:#0b5b43">✓ ${esc(w.q.options[w.q.answer])}</span><br><span style="color:#8a2020">✗ ${esc(w.q.options[w.a.idx])}</span></div>`).join('')}</div>`}app.innerHTML=`<section class="card score"><h1>🏆 Finished!</h1><div class="score-big">${s} / ${t}</div><p class="muted">${Math.round(s/t*100)}%</p><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px"><button class="btn primary" onclick="home()">🏠 Home</button><button class="btn green" onclick="retryAll()">🔄 Retry All</button>${wrong>0?`<button class="btn green" onclick="retryWrong()">🔁 Retry Wrong (${wrong})</button>`:''}<a class="btn" href="communication-quiz.html">Part 1</a></div></section>${reviewHtml}`}
+function retryAll(){start('all',originalBank)}
+function retryWrong(){const w=[];for(let i=0;i<bank.length;i++){const a=answers[i];if(a&&!a.correct)w.push(bank[i])}if(w.length>0)start('all',w)}
+home();
+</script>
+</body>
+</html>
