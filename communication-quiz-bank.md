@@ -7,7 +7,7 @@
 | # | Question | Correct Answer |
 |---|----------|----------------|
 | 1 | What is the primary purpose of communication in health education and promotion? | To promote health improvements through behavior modification |
-| 2 | Which stage of communication is characterized by ensuring the message is seen or heard by the target group? | Stage 2: Attracting attention |
+| 2 | Which stage of communication is characterized by ensuring the message is seen or heard by the target group? | Stage 1: Reaching the intended audience |
 | 3 | Which of the following is a physical characteristic used to attract attention? | Intensity, such as bold lettering |
 | 4 | A communication that uses unusual features or surprising objects to attract attention is using: | Novelty |
 | 5 | Misunderstandings in communication most easily occur when: | Complex language or technical jargon is used |
