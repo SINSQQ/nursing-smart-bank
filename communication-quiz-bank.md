@@ -23,7 +23,7 @@
 | 9 | What is defined as the passing of information from sender to receiver with minimum interference? | Effective communication |
 | 10 | Which of the following is a primary result of communication barriers in the workplace? | Message manipulation and conflict |
 | 11 | Using unfamiliar or over-complicated technical terms describes which barrier? | Jargon |
-| 12 | If a receiver is distracted by others speaking at the same time, this is a barrier of: | Semantic noise |
+| 12 | If a receiver is distracted by others speaking at the same time, this is a barrier of: | Lack of attention or interest |
 | 13 | Which barrier occurs when two people see things differently and their viewpoints hinder message deciphering? | Perception difference |
 | 14 | A receiver with hearing problems or a speaker with speech disabilities is experiencing: | Physical disabilities |
 | 15 | Taboo topics like politics, religion, or racism often create: | Emotional barriers |
