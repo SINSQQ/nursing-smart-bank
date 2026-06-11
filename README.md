@@ -10,6 +10,7 @@ Static smart review site for Adult Nursing questions.
 - `missing_unposted_questions.json` - MCQ questions not posted because options/answers need review
 - `nursing_smart_bank.pdf` - printable PDF
 - `communication-quiz.html` - standalone communication quiz in the pharmacology-style format
+- `training-quiz.html` - standalone training MCQ quiz page
 - `communication-quiz-bank.md` - answer key for the communication quiz
 
 ## Notes
